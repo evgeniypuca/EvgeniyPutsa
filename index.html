@@ -7,7 +7,6 @@
    <style>
       body {
          background-image: linear-gradient(to right top, #b9deff, #cbe3ff, #dbe8ff, #e9eeff, #f4f5ff, #eef1ff, #e7eeff, #e0ebff, #bae0fc, #89d8f2, #51cfdb, #12c4b8);
-         min-width: 800px;
       }
 
       h1,
@@ -23,11 +22,10 @@
       }
 
       .rikmorty {
-         background: url(img/Morty.webp) no-repeat left,
-            url(img/Rick_Sanchez.png) no-repeat right;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
       }
-
-
 
       a {
          text-decoration: none;
@@ -39,7 +37,9 @@
 
 <body>
    <div class="rikmorty">
-      <div style="width: 400px; text-align: center; margin: 0 auto; font-family: sans-serif;">
+      <div><img src="img/Morty.webp" alt=""></div>
+
+      <div style="width: 400px; text-align: center; white-space: nowrap; margin: 0 auto; font-family: sans-serif;">
          <h1>Home Work</h1>
          <h3>HTMLCSS 1</h3>
 
@@ -95,10 +95,9 @@
                <br>
                <a href="HTMLCSS_4/Add/4.2/index.html">Area</a>
                <br>
-               <a href="HTMLCSS_4/Add/4.3/index.html">Nocut</a>
+               <!-- <a href="HTMLCSS_4/Add/4.3/index.html">Nocut</a>
                <br>
-               <a href=""></a>
-
+               <a href="HTMLCSS_4/Add/tefal/index.html">Tefal</a> -->
             </div>
          </div>
          <hr>
@@ -112,10 +111,12 @@
             </div>
             <div>
                <h4>Add</h4>
-               <a href="HTMLCSS_5/Add/index.html">Ball12 (Незаконченный)</a>
+               <!-- <a href="HTMLCSS_5/Add/index.html">Ball12 (Незаконченный)</a> -->
             </div>
          </div>
       </div>
+      <div><img src="img/Rick_Sanchez.png" alt=""></div>
+
    </div>
 </body>
 
