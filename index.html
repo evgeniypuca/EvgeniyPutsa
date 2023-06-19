@@ -16,7 +16,8 @@
 
       h1,
       h2,
-      h3 {
+      h3,
+      h4 {
          text-align: center;
          font-size: 2rem;
          font-family: 'Inter', sans-serif;
@@ -25,12 +26,12 @@
 
       h1 {
          font: normal bold 60px sans-serif;
+
       }
 
       .section {
          display: flex;
          justify-content: space-around;
-
       }
 
       .section>div {
@@ -38,24 +39,41 @@
          flex-direction: column;
       }
 
-      .rikmorty {
+      .main {
          display: flex;
          justify-content: space-around;
          align-items: center;
+
+
       }
+
 
       a {
          background-image: linear-gradient(60deg, #e85475 10%, #d48444 50%, #efcb0a 100%);
-         color: #f7f4f4;
+         color: hsl(0, 0%, 100%);
          border-radius: 10px;
          width: 200px;
          padding: 15px 10px;
          transition: all 0.3s ease;
          font-size: 20px;
          text-decoration: none;
-         border: solid 1px rgba(166, 208, 255, 0.863);
+         border: solid 2px rgba(166, 208, 255, 0.863);
          background-image: linear-gradient(60deg, #24ce60 10%, #1fca94 50%, #089a86 100%);
          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+
+
+      img.morty:hover~div h4.base~a {
+         box-shadow: rgba(36, 158, 97, 0.685) 0px 0px 50px 10px;
+      }
+
+      img.rick:hover~div h4.add~a {
+         box-shadow: rgba(36, 158, 97, 0.685) 0px 0px 50px 10px;
+
+      }
+
+      .rick {
+         order: 2;
       }
 
       a:hover {
@@ -76,21 +94,21 @@
 
 
 <body>
-   <div class="rikmorty">
-      <div><img src="img/Morty.webp" alt=""></div>
-
-      <div style="width: 500px; text-align: center; white-space: nowrap; margin: 0 auto; font-family: sans-serif;">
+   <div class="main">
+      <img class="morty" src="img/Morty.webp" alt="">
+      <img class="rick" src="img/Rick_Sanchez.png" alt="">
+      <div style="min-width: 600px; text-align: center; white-space: nowrap; margin: 0 auto; font-family: sans-serif;">
          <h1>Home Work</h1>
          <h3>HTMLCSS 1</h3>
 
          <div class="section">
             <div>
-               <h4>Base</h4>
+               <h4 class="base">Base</h4>
                <a href="HTMLCSS_1/Base/Diary/index.html">Diary</a> <br>
                <a href="HTMLCSS_1/Base/Vizbor/vizbor.html">Vizbor</a>
             </div>
             <div>
-               <h4>Add</h4>
+               <h4 class="add">Add</h4>
                <a href="HTMLCSS_1/Add/1.1+valid/index.html">Valid</a> <br>
                <a href="HTMLCSS_1/Add/1.2+ oldtag/index.html">Oldtag</a>
             </div>
@@ -99,11 +117,11 @@
          <h3>HTMLCSS 2</h3>
          <div class="section">
             <div>
-               <h4>Base</h4>
+               <h4 class="base">Base</h4>
                <a href="HTMLCSS_2/Base/CHILDBOOK.html">Childbook</a>
             </div>
             <div>
-               <h4>Add</h4>
+               <h4 class="add">Add</h4>
                <a href="HTMLCSS_2/Add/webp/index.html">Webp</a><br>
                <a href="HTMLCSS_2/Add/skobki/index.html">Skobki</a>
 
@@ -113,11 +131,11 @@
          <h3>HTMLCSS 3</h3>
          <div class="section">
             <div>
-               <h4>Base</h4>
+               <h4 class="base">Base</h4>
                <a href="HTMLCSS_3/Base/index.html">Font GWF</a>
             </div>
             <div>
-               <h4>Add</h4>
+               <h4 class="add">Add</h4>
                <a href="HTMLCSS_3/Add/font/index.html">Font</a><br>
                <a href="HTMLCSS_3/Add/safe/index.html">Safe</a>
             </div>
@@ -126,11 +144,11 @@
          <h3>HTMLCSS 4</h3>
          <div class="section">
             <div>
-               <h4>Base</h4>
+               <h4 class="base">Base</h4>
                <a href="HTMLCSS_4/Base/index.html">Frame</a>
             </div>
             <div>
-               <h4>Add</h4>
+               <h4 class="add">Add</h4>
                <a href="HTMLCSS_4/Add/4.1/index.html">1 tag</a>
                <br>
                <a href="HTMLCSS_4/Add/4.2/index.html">Area</a>
@@ -144,18 +162,18 @@
          <h3>HTMLCSS 5</h3>
          <div class="section">
             <div>
-               <h4>Base</h4>
+               <h4 class="base">Base</h4>
                <a href="HTMLCSS_5/Base/Tabl/index.html">Maket table</a>
                <br>
                <a href="HTMLCSS_5/Base/DIv/index.html">Maket div</a>
             </div>
             <div>
-               <h4>Add</h4>
+               <h4 class="add">Add</h4>
                <!-- <a href="HTMLCSS_5/Add/index.html">Ball12 (Незаконченный)</a> -->
             </div>
          </div>
       </div>
-      <div><img src="img/Rick_Sanchez.png" alt=""></div>
+
 
    </div>
 </body>
