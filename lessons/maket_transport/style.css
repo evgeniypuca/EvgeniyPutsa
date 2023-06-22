@@ -1,0 +1,77 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+   margin: 0 auto;
+   width: 1456px;
+}
+
+.header { 
+    border-bottom: 1px solid #D1D5DB;
+}
+
+.logo{
+    float: left;
+    margin-top: 23px;
+}
+
+.burger {
+    width: 48px;
+    height: 26px;
+   
+}
+
+
+
+.menu {
+    float: right;
+    
+}
+
+
+.menu ul {
+display: inline-block;
+font-size: 16px;
+font-family: Montserrat;
+font-weight: 600;
+line-height: 140%;
+text-transform: uppercase;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 40px;
+   
+}
+
+button {
+width: 307px;
+height: 78px;
+padding: 10px 32px;
+justify-content: center;
+align-items: center;
+background: var(--accent-1, #003B77);
+color: var(--white, #FFF);
+font-size: 16px;
+font-family: Montserrat;
+font-weight: 700;
+line-height: 140%;
+text-transform: uppercase;
+margin-right:40px;
+}
+
+.slider {
+background: url(img/background.jpg) 0 136px no-repeat ;
+background-size: cover;
+height: 800px;
+}
+
+.slider.h1 {
+    text-align: center;;
+}
+
+.slider_company {
+}
+.slider_text {
+}
