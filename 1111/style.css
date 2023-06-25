@@ -1,0 +1,31 @@
+h1 {
+   text-align: center;
+}
+
+#reportList {
+   margin: 20px auto;
+   width: 300px;
+}
+
+#reportList h2 {
+   text-align: center;
+}
+
+#reportList ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#reportList li {
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+
+#reportDetails {
+   margin: 20px auto;
+   width: 300px;
+}
+
+#reportDetails h2 {
+   text-align: center;
+}
