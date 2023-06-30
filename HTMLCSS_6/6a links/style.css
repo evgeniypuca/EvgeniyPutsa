@@ -1,0 +1,55 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   margin: 50px 0 0 30px;
+}
+
+
+div {
+   margin-bottom: 20px;
+}
+
+
+a {
+   color: green;
+   padding: 5px 10px 10px 10px;
+}
+
+
+a:hover {
+   color: red;
+}
+
+
+.option1 a {
+   border-right: solid red 3px;
+}
+
+
+.option2 div {
+   display: inline;
+}
+
+.option2 a {
+   padding-right: 0;
+}
+
+
+.option2 a::after {
+   content: url(redBorder1.png);
+}
+
+
+.option3 {
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.option3 a {
+   background: url(redBorder.png)right repeat-y;
+}

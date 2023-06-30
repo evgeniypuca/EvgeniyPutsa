@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>6a links</title>
+</head>
+
+<body>
+   <!-- Красный разделитель задан свойством border-right.
+   Ссылки расположены в строку поскольку они строчные элементы
+   Данный способ легко выполоняется, не требует дополнительных изображений, но плох для строчных элементов поскольку при большом количестве контента и небольшом экране рамка будет неверного размера,
+   лучше обернут в div и ему уже присвоить бордер-->
+   <div class="option1">
+      <a href="https://www.onliner.by/">первая ссылка</a>
+      <a href="https://www.onliner.by/">вторая ссылка</a>
+      <a href="https://www.onliner.by/">третья ссылка</a>
+      <a href="https://www.onliner.by/">четвертая ссылка</a>
+   </div>
+
+   <!-- Красный разделитель задан псевдокласом :after и изображением.
+   Ссылки расположены в строку поскольку они завернуты в DIV со свойтвом display: inline.
+   Сложность заключается в подборе необходимого по размерам и цвету изображения для установки границы -->
+   <div class="option2">
+      <div><a href="https://www.onliner.by/">первая ссылка</a></div>
+      <div><a href="https://www.onliner.by/">вторая ссылка</a></div>
+      <div><a href="https://www.onliner.by/">третья ссылка</a></div>
+      <div><a href="https://www.onliner.by/">четвертая ссылка</a></div>
+   </div>
+   <!-- Красный разделитель задан свойством background:right repeat-y и изображеним
+   Ссылки расположены в строку поскольку они завернуты в DIV, а родителю задан display: flex;
+   К минусам можно отнести необхождимость подбора изображения необходимого цвета. -->
+   <div class="option3">
+      <div><a href="https://www.onliner.by/">первая ссылка</a></div>
+      <div><a href="https://www.onliner.by/">вторая ссылка</a></div>
+      <div><a href="https://www.onliner.by/">третья ссылка</a></div>
+      <div><a href="https://www.onliner.by/">четвертая ссылка</a></div>
+   </div>
+
+</body>
+
+</html>
