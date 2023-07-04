@@ -1,0 +1,8 @@
+@media print   {
+  
+    .content{
+        text-align: justify;
+        font-size: 3em;
+        font-style: italic;
+    }
+}

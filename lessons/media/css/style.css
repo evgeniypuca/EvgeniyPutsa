@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.header{
+background-color: rgb(81, 235, 212); height: 100px;
+}
+
+.wrap {
+    background-color: orange
+}
+.menu {
+    background-color: red;
+     float: left;
+      height: 500px;
+       width: 20%;
+}
+.baner {
+    background-color: blue;
+     float: right;
+      height: 500px;
+       width: 200px;
+}
+
+.content{
+    background-color: green;
+     margin: 0 200px 0 20%;
+}
+.footer {
+    background-color: rgb(24, 224, 208);
+    height: 100px;
+}

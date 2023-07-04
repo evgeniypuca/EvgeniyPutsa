@@ -1,0 +1,19 @@
+@media all and (max-width: 1100px) {
+    .header{
+        background-color: rgb(56, 228, 70);
+        }
+    
+    .menu {
+        background-color: rgb(223, 184, 184);
+        width: 30%;
+    }
+    .baner {
+        background-color: rgb(236, 216, 124);
+        width: 400px;
+    }    
+    .content{
+        background-color: green;
+         margin: 0 400px 0 30%;
+    }
+}
+
