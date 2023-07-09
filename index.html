@@ -6,105 +6,10 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@400;600;800&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
    <title>Document</title>
-   <style>
-      * {
-         margin: 0;
-         padding: 0;
-      }
-
-      body {
-
-         overflow: auto;
-
-         background-image: linear-gradient(to right top, #b9deff, #cbe3ff, #dbe8ff, #e9eeff, #f4f5ff, #eef1ff, #e7eeff, #e0ebff, #bae0fc, #89d8f2, #51cfdb, #12c4b8);
-      }
-
-      h1,
-      h2,
-      h3,
-      h4 {
-         text-align: center;
-         font-size: 2rem;
-         font-family: 'Inter', sans-serif;
-         color: #474470;
-      }
-
-      h1 {
-         font: normal bold 60px sans-serif;
-
-      }
-
-      .section {
-         display: flex;
-         justify-content: space-around;
-         margin-bottom: 50px;
-      }
-
-      .section>div {
-         display: flex;
-         flex-direction: column;
-      }
-
-      .main {
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
-
-
-      }
-
-
-      a {
-         background-image: linear-gradient(60deg, #e85475 10%, #d48444 50%, #efcb0a 100%);
-         color: hsl(0, 0%, 100%);
-         border-radius: 10px;
-         width: 200px;
-         padding: 15px 10px;
-         transition: all 0.3s ease;
-         font-size: 20px;
-         text-decoration: none;
-         border: solid 2px rgba(166, 208, 255, 0.863);
-         background-image: linear-gradient(60deg, #24ce60 10%, #1fca94 50%, #089a86 100%);
-         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
-      }
-
-
-      img.morty:hover~div h4.base~a {
-         box-shadow: rgba(36, 158, 97, 0.2) 0px 0px 50px 10px;
-         transform: scale(1.1);
-      }
-
-      img.rick:hover~div h4.add~a {
-         box-shadow: rgba(36, 158, 97, 0.2) 0px 0px 50px 10px;
-         transform: scale(1.1);
-      }
-
-      .rick {
-         order: 2;
-      }
-
-      a:hover {
-         transform: scale(1.1);
-      }
-
-      a:active {
-         position: relative;
-         top: 5px;
-      }
-
-      img {
-         transition: 0.2s linear;
-
-      }
-
-      img:hover {
-         transform: scale(1.3);
-      }
-   </style>
-
 </head>
+
 
 
 <body>
@@ -112,18 +17,18 @@
       <img class="morty" src="img/Morty.webp" alt="">
       <img class="rick" src="img/Rick_Sanchez.png" alt="">
       <div style="min-width: 600px; text-align: center; white-space: nowrap; margin: 0 auto; font-family: sans-serif;">
-         <h1>Home Work</h1>
+         <h1>Home Work Евгений Пуца</h1>
          <h3>HTMLCSS 1</h3>
 
          <div class="section">
             <div>
                <h4 class="base">Base</h4>
-               <a href="HTMLCSS_1/Base/Diary/index.html">Diary</a> <br>
+               <a class="remarks" href="HTMLCSS_1/Base/Diary/index.html">Diary</a>
                <a href="HTMLCSS_1/Base/Vizbor/vizbor.html">Vizbor</a>
             </div>
             <div>
                <h4 class="add">Add</h4>
-               <a href="HTMLCSS_1/Add/1.1+valid/index.html">Valid</a> <br>
+               <a href="HTMLCSS_1/Add/1.1+valid/index.html">Valid</a>
                <a href="HTMLCSS_1/Add/1.2+ oldtag/index.html">Oldtag</a>
             </div>
          </div>
@@ -136,9 +41,8 @@
             </div>
             <div>
                <h4 class="add">Add</h4>
-               <a href="HTMLCSS_2/Add/webp/index.html">Webp</a><br>
+               <a href="HTMLCSS_2/Add/webp/index.html">Webp</a>
                <a href="HTMLCSS_2/Add/skobki/index.html">Skobki</a>
-
             </div>
          </div>
          <hr>
@@ -150,7 +54,7 @@
             </div>
             <div>
                <h4 class="add">Add</h4>
-               <a href="HTMLCSS_3/Add/font/index.html">Font</a><br>
+               <a href="HTMLCSS_3/Add/font/index.html">Font</a>
                <a href="HTMLCSS_3/Add/safe/index.html">Safe</a>
             </div>
          </div>
@@ -160,17 +64,18 @@
             <div>
                <h4 class="base">Base</h4>
                <a href="HTMLCSS_4/Base/frame/index.html">Frame</a>
-               <a href="HTMLCSS_4/Base/5.6/index.html">5.6</a>
+               <a class="no_check" href="HTMLCSS_4/Base/5.6/index.html">5.6</a>
             </div>
             <div>
                <h4 class="add">Add</h4>
                <a href="HTMLCSS_4/Add/4.1/index.html">1 tag</a>
-               <br>
+
                <a href="HTMLCSS_4/Add/4.2/index.html">Area</a>
-               <br>
+
                <a href="HTMLCSS_4/Add/4.3/index.html">Nocut</a>
-               <br>
+
                <a href="HTMLCSS_4/Add/tefal/index.html">Tefal</a>
+               <a class="no_check" href="HTMLCSS_4/Add/4.5/index.html">Cards</a>
             </div>
          </div>
          <hr>
@@ -179,7 +84,7 @@
             <div>
                <h4 class="base">Base</h4>
                <a href="HTMLCSS_5/Base/Tabl/index.html">Maket table</a>
-               <br>
+
                <a href="HTMLCSS_5/Base/DIv/index.html">Maket div</a>
             </div>
             <div>
@@ -187,11 +92,41 @@
                <a href="HTMLCSS_5/Add/index.html">Ball12</a>
             </div>
          </div>
+         <hr>
+         <h3>HTMLCSS 6</h3>
+         <div class="section">
+            <div>
+               <h4 class="base">Base</h4>
+               <a class="no_check" href="HTMLCSS_6/6a links/index.html">6a links</a>
+               <a class="no_check" href="HTMLCSS_6/6b  chess/index.html">6b chess</a>
+               <a class="no_check" href="HTMLCSS_6/6c/before/index1.html">before</a></li>
+               <a class="no_check" href="HTMLCSS_6/6c/no_before/index2.html">no before</a>
+               <a class="no_check" href="HTMLCSS_6/6d stars/index.html">stars</a>
+            </div>
+         </div>
+         <hr>
+         <h3>HTMLCSS 7</h3>
+         <div class="section">
+            <div>
+               <h4 class="base">Base</h4>
+            </div>
+            <div>
+               <h4 class="add">Add</h4>
+               <a class="no_check" href="HTMLCSS_7/pictures/index.html">pictures</a>
+            </div>
+         </div>
+         <hr>
+         <h3>HTMLCSS 8</h3>
+         <div class="section">
+            <div>
+               <h4 class="base">Base</h4>
+               <a class="no_check" href="HTMLCSS_8/Form/index.html">form</a>
+            </div>
+         </div>
       </div>
 
 
    </div>
 </body>
-
 
 </html>

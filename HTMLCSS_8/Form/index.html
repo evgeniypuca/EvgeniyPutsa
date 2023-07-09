@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="media.css">
+   <title>Document</title>
+</head>
+
+<form action="https://fe.it-academy.by/TestForm.php" target="_blank" method="post">
+   <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+   <div class="main clearfix">
+      <div class="left title">
+         <label for="title">Название статьи: </label>
+      </div>
+      <div class="right">
+         <input type="text" name="name" id="name">
+      </div>
+      <div>
+         <label class="left" for="subject">Рубрика: </label>
+         <div class="right subject">
+            <select name="subject" id="subject">
+               <option value="Comp">Компьтерная техника</option>
+               <option value="Design">Графика и дизайн</option>
+               <option value="Programming">Программирование</option>
+            </select>
+         </div>
+      </div>
+      <div>
+         <label class="left " for="Publication">Публикация:</label>
+         <div class="right radio">
+            <label><input type="radio" name="Publication" value="1" id="Publication">на сайте</label>
+            <label><input type="radio" name="Publication" value="2">в журнале</label>
+            <label><input type="radio" name="Publication" value="3">на сайте и в журнале</label>
+         </div>
+      </div>
+      <div>
+         <label class="left" for="comments">Разрешить комментарии:</label>
+         <div class="right checkbox">
+            <input type="checkbox" name="comments" id="comments">
+         </div>
+      </div>
+   </div>
+   <div class="textarea"><label for="textarea">Текст статьи:</label></div>
+   <textarea name="textarea" id="" id="textarea"></textarea>
+
+   <button type="submit">Опубликовать</button>
+</form>
+
+<body>
+
+</body>
+
+</html>

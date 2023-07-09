@@ -1,5 +1,10 @@
 /* Reset CSS by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ */
 
+* {
+  box-sizing: border-box;
+}
+
+
 html,
 body,
 div,

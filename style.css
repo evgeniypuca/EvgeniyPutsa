@@ -1,0 +1,111 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+
+   overflow: auto;
+
+   background-image: linear-gradient(to right top, #b9deff, #cbe3ff, #dbe8ff, #e9eeff, #f4f5ff, #eef1ff, #e7eeff, #e0ebff, #bae0fc, #89d8f2, #51cfdb, #12c4b8);
+}
+
+
+.remarks::after {
+   content: ' Были замечания';
+   background: rgb(255, 102, 102);
+   border-radius: 4px;
+
+}
+
+.no_check::after {
+   content: ' Не проверено ';
+   background: rgb(218, 253, 89);
+   border-radius: 4px;
+   color: #474470
+}
+
+h1,
+h2,
+h3,
+h4 {
+   text-align: center;
+   font-size: 1rem;
+   font-family: 'Inter', sans-serif;
+   color: #474470;
+}
+
+h1 {
+   font: normal bold 36px sans-serif;
+
+}
+
+.section {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 10px;
+}
+
+.section>div {
+   display: flex;
+   flex-direction: column;
+}
+
+.main {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+
+}
+
+
+a {
+   margin: 5px 0;
+   background-image: linear-gradient(60deg, #e85475 10%, #d48444 50%, #efcb0a 100%);
+   color: hsl(0, 0%, 100%);
+   border-radius: 5px;
+   width: 200px;
+   padding: 10px 5px;
+   transition: all 0.3s ease;
+   font-size: 14px;
+   text-decoration: none;
+   border: solid 2px rgba(166, 208, 255, 0.863);
+   background-image: linear-gradient(60deg, #24ce60 10%, #1fca94 50%, #089a86 100%);
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+
+img.morty:hover~div h4.base~a {
+   box-shadow: rgba(36, 158, 97, 0.2) 0px 0px 50px 10px;
+   transform: scale(1.1);
+}
+
+img.rick:hover~div h4.add~a {
+   box-shadow: rgba(36, 158, 97, 0.2) 0px 0px 50px 10px;
+   transform: scale(1.1);
+}
+
+.rick {
+   order: 2;
+}
+
+a:hover {
+   transform: scale(1.1);
+}
+
+a:active {
+   position: relative;
+   top: 5px;
+}
+
+img {
+   transition: 0.2s linear;
+
+}
+
+img:hover {
+   transform: scale(1.3);
+}

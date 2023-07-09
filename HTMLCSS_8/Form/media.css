@@ -1,0 +1,56 @@
+@media all and (max-width: 573px) {
+   p {
+      height: 50px;
+   }
+
+   [for="comments"] {
+      padding-top: 20px;
+   }
+
+   [type="checkbox"] {
+      margin-top: 27px;
+   }
+
+   .right,
+   .left {
+      float: none;
+
+   }
+
+   .right {
+      padding-left: 0;
+   }
+
+   .radio>label {
+      display: block;
+      margin: 3px 0;
+   }
+
+   .checkbox {
+      display: inline;
+   }
+
+   .title {
+      margin-bottom: 3px;
+   }
+
+   .subject {
+      margin-top: 3px;
+   }
+
+   [type="checkbox"] {
+      margin-top: 0px;
+   }
+
+   .textarea {
+      margin-top: 5px;
+   }
+
+
+
+
+
+
+
+
+}

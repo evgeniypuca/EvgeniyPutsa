@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial;
+   font-size: 14px;
+}
+
+.clearfix::after {
+   display: block;
+   content: '';
+   clear: both;
+}
+
+form {
+   padding: 30px;
+   min-width: 260px;
+
+}
+
+p {
+   padding-bottom: 15px;
+}
+
+.left {
+   float: left;
+
+}
+
+.right {
+   padding-left: 170px;
+
+}
+
+.right>[type="text"] {
+   width: 100%;
+   margin-bottom: 3px;
+}
+
+select {
+   width: 200px;
+   margin-bottom: 3px;
+}
+
+[for="comments"] {
+   margin-top: 5px;
+}
+
+
+
+[type="radio"] {
+   margin-right: 4px;
+}
+
+
+
+[type="checkbox"] {
+   margin-top: 7px;
+}
+
+textarea {
+   width: 100%;
+}
+
+button {
+   margin-top: 5px;
+}

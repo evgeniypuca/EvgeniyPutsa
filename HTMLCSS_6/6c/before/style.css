@@ -1,0 +1,35 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 20px;
+}
+
+.date {
+   color: green;
+}
+
+.title {
+   color: red;
+   font-weight: bold;
+}
+
+a {
+   color: blue;
+   font-weight: bold;
+}
+
+
+.info {
+   color: rgb(72, 15, 203);
+   font-style: italic;
+}
+
+
+[href^='https']::before {
+   content: url(../extref.png);
+
+}

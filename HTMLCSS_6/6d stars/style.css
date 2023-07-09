@@ -1,0 +1,18 @@
+div {
+   display: inline-block;
+}
+
+.stars {
+   float: right;
+   background: url(star0.png);
+   width: 77px;
+   height: 78px;
+}
+
+.stars:hover~.stars {
+   background: url(star1.png);
+}
+
+.stars:hover {
+   background: url(star1.png);
+}
