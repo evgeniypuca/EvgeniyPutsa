@@ -1,0 +1,50 @@
+@media all and (max-width: 900px) {
+
+   h1,
+   h2,
+   h3 {
+      font-size: 2rem;
+   }
+
+   img {
+      float: none;
+      width: 100%;
+      padding: 0 0 10px 0;
+   }
+
+   p {
+      font-size: 1.2rem;
+   }
+
+}
+
+@media all and (max-width: 650px) {
+   .left {
+      float: none;
+      padding: 30px;
+      width: 100%;
+      background-color: #f0e78c;
+   }
+
+   .left ul {
+      font-size: 1.5rem;
+   }
+
+   p {
+      font-size: 1.5rem;
+   }
+
+   h3 {
+      margin: 0 auto;
+   }
+
+   .center {
+      margin-left: 0;
+
+   }
+
+   .main {
+      background-image: none;
+   }
+
+}

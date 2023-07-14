@@ -1,0 +1,54 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+body {
+   padding: 15px;
+   overflow: hidden;
+
+}
+
+.pictures {
+   position: relative;
+   margin: 0 auto;
+   width: 500px;
+   height: 400px;
+}
+
+
+.biohazard {
+   position: absolute;
+   top: 30px;
+}
+
+.Man-and-woman {
+   position: absolute;
+   left: 250px;
+}
+
+.No_smoking {
+   position: absolute;
+   left: 96px;
+   top: 50px;
+}
+
+.Yin_and_Yang {
+   position: absolute;
+   left: 125px;
+   top: 187px;
+}
+
+.biohazard:hover {
+   z-index: 1;
+}
+
+.Man-and-woman:hover {
+   z-index: 1;
+}
+
+.Yin_and_Yang:hover {
+   z-index: 1;
+}
