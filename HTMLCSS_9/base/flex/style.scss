@@ -1,0 +1,116 @@
+$maincolor: #f0e78c;
+$dist: 20px;
+
+@mixin only($maxW) {
+   @media all and (max-width: $maxW) {
+      @content;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: $dist;
+   min-width: 360px;
+
+   footer,
+   header {
+      text-align: center;
+      background-color: #add8e6;
+      color: #0a0dfe;
+      padding: 10px;
+
+      @include only(650px) {
+         display: none;
+      }
+   }
+}
+
+
+
+.main {
+   display: flex;
+
+   @include only(650px) {
+      flex-direction: column;
+   }
+}
+
+.left {
+   padding: 40px 0 0 40px;
+   background-color: $maincolor;
+   flex: 0 0 250px;
+
+   @include only(650px) {
+      order: 1;
+      background-color: white;
+      padding: 0;
+   }
+
+   h3 {
+      margin: 0 0 10px -20px;
+
+      @include only(650px) {
+         font-size: 1.5rem;
+         margin: 0 0 10px 0;
+      }
+   }
+
+   ul {
+      @include only(650px) {
+         font-size: 1.5rem;
+         list-style-type: none;
+         display: flex;
+         flex-flow: wrap;
+         justify-content: start;
+
+      }
+
+      li {
+         margin-right: $dist;
+      }
+   }
+}
+
+.center {
+   text-align: center;
+   margin-left: $dist;
+   background-image: url(img/bool.png);
+   background-repeat: repeat-y;
+   background-position: right;
+   background-size: 70px;
+
+   @include only (650px) {
+      background-image: none;
+      margin: 0 0 40px 0;
+   }
+
+   h2 {
+      margin: 20px 0;
+   }
+
+   img {
+      float: left;
+      padding: 0 20px 10px 0;
+
+      @include only(650px) {
+         float: none;
+         width: 100%;
+         padding: 0 0 10px 0;
+      }
+   }
+
+   p {
+      text-align: left;
+
+      @include only(650px) {
+         font-size: 1.5rem;
+      }
+   }
+}

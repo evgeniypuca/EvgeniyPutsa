@@ -1,0 +1,57 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 30px;
+}
+
+p {
+   margin-top: 16px;
+}
+
+.header {
+   font-weight: bold;
+   font-size: 24px;
+   margin: 20px 0;
+}
+
+.green {
+   color: green;
+}
+
+.red {
+   color: red;
+   font-weight: bold;
+}
+
+.text {
+   font-style: italic;
+   color: blue;
+}
+
+@media print {
+   a {
+      visibility: hidden;
+   }
+
+   [href*=botvinnik]:after {
+      content: '(ссылка Информация на https://chesspro.ru/statistic/botvinnik.shtml)';
+      visibility: visible;
+      margin-left: -90px;
+   }
+
+   [href*=karpov]:after {
+      content: '(ссылка Информация на https://chesspro.ru/statistic/karpov.shtml)';
+      visibility: visible;
+      margin-left: -90px;
+   }
+
+   [href*=kasparov]:after {
+      content: '(ссылка Информация на https://chesspro.ru/statistic/kasparov.shtml)';
+      visibility: visible;
+      margin-left: -90px;
+   }
+}
