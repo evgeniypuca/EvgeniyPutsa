@@ -1,67 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900" rel="stylesheet" /><div class="heder__container">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <div class="heder__container">
         <link rel="stylesheet" href="style.css">
         <title>Document</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__container">
-                <div class="header__row row-1">
-                    <div class="row-1__logo"><img src="img/logo.svg" alt="logo"></div>
-                    <div class="row-1__info">
-                        <div class="row-1__address">Лиговский пр. 133 Е</div>
-                        <div class="row-1__phone">+7 (911) 123-45-67</div>
-                        <div class="row-1__email">lavita_school@gmail.com</div>
-                    </div>
-                    <div class="row-1__btn btn">Запись на курсы</div>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row row-1">
+                <div class="row-1__logo"><img src="img/logo.svg" alt="logo"></div>
+                <div class="row-1__info">
+                    <div class="row-1__address">Лиговский пр. 133 Е</div>
+                    <div class="row-1__phone">+7 (911) 123-45-67</div>
+                    <div class="row-1__email">lavita_school@gmail.com</div>
+
                 </div>
-                <div class="header__row row-2">
-                    <div class="row-2__logo"><img src="img/logo2.svg" alt=""></div>
-                    <div class="row-2__info">
-                        <ul class="list">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Расписание и оплата</a></li>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">Экзамены</a></li>
-                            <li><a href="#">Обучение в испании</a></li>
-                            <li><a href="#">Новости</a></li>
-                            <li><a href="#">Фотогалерея</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Отзывы</a></li>
+                <button class="row-1__btn btn">Запись на курсы</button>
+            </div>
+            <div class="header__row row-2">
+                <div class="row-2__logo"><img src="img/logo2.svg" alt=""></div>
+                <nav class="row-2__info">
+                    <ul class="list">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Расписание и оплата</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Экзамены</a></li>
+                        <li><a href="#">Обучение в испании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section-1">
+            <div class="container">
+                <div class="section-1__text">ИДЕТ НАБОР НА ОБУЧЕНИЕ В ШКОЛУ "ЛАВИТА" В НЕВСКОМ РАЙОНЕ ПЕТЕРБУРГА! УСПЕЙ
+                    ЗАПИСАТЬСЯ!</div>
+                <button class="section-1__btn btn">Подробнее</button>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="container">
+                <div class="section-2__school-lavita">
+                    <h2 class="section-2__title title">Школа “Лавита”</h2>
+                    <div class="section-2__text">Eleifend purus dictum nunc, aenean tincidunt massa libero. Aliquam
+                        nullam enim at ac. Imperdiet risus mi quis vitae non. Cursus scelerisque donec vulputate ante
+                        etiam libero donec ridiculus at. Phasellus at nullam dapibus ut in. Vulputate consequat purus
+                        tellus vel cras. Eu sollicitudin arcu faucibus turpis venenatis.
+                        Aliquet auctor tempus, erat at interdum eu. Sapien amet, amet sit non at sodales volutpat. <br>
+                        <br> Cursus et laoreet eget velit a tortor eu nibh mattis. Mi facilisi ultrices maecenas id.
+                    </div>
+
+                </div>
+                <div class="section-2__background">
+                    <img src="img/section2_logo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="container">
+                <h2 class="section-3__title title">Курсы и стоимость обучения</h2>
+                <div class="section-3__btns">
+                    <button class="section-3__btn btn">(учебный год с <br> сентября по май)</button>
+                    <button class="section-3__btn btn">(учебный год с <br> сентября по июнь)</button>
+                </div>
+                <div class="section-3__description">
+                    <ul>
+                        <li>Испанский язык <br> для детей</li>
+                        <li>Испанский язык <br> для взрослых</li>
+                        <li>Индивидуальные занятия <br> и минигруппы</li>
+                        <li>Подготовка к <br> международным экзаменам</li>
+                    </ul>
+                </div>
+                <div class="section-3__table table">
+                    <div class="table__title">
+                        <h4>Группы</h4>
+                        <h4>Интенсивность</h4>
+                        <h4>Стоимость</h4>
+                    </div>
+                    <div class="table__element">
+                        <div class="table__left">
+                            <p>8-9 лет</p>
+                        </div>
+                        <div class="table__center">
+                            <p>2 раза в неделю по 2 ак. часа</p>
+                            <p>17:00 - 18:30</p>
+                        </div>
+                        <div class="table__right">
+                            <p><span> 28 800 р.</span> (1 ак. час = 600 р.) за 24 занятия</p>
+                            <p>Оплата 3 раза в год</p>
+                            <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с
+                                учебным планов</p>
+                        </div>
+                    </div>
+                    <div class="table__element">
+                        <div class="table__left">
+                            <p>8-9 лет</p>
+                        </div>
+                        <div class="table__center">
+                            <p>2 раза в неделю по 2 ак. часа</p>
+                            <p>17:00 - 18:30</p>
+                        </div>
+                        <div class="table__right">
+                            <p><span> 28 800 р.</span> (1 ак. час = 600 р.) за 24 занятия</p>
+                            <p>Оплата 3 раза в год</p>
+                            <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с
+                                учебным планов</p>
+                        </div>
+                    </div>
+                    <div class="table__element">
+                        <div class="table__left">
+                            <p>8-9 лет</p>
+                        </div>
+                        <div class="table__center">
+                            <p>2 раза в неделю по 2 ак. часа</p>
+                            <p>17:00 - 18:30</p>
+                        </div>
+                        <div class="table__right">
+                            <p><span> 28 800 р.</span> (1 ак. час = 600 р.) за 24 занятия</p>
+                            <p>Оплата 3 раза в год</p>
+                            <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с
+                                учебным планов</p>
+                        </div>
+                    </div>
+                    <div class="table__element">
+                        <div class="table__left">
+                            <p>8-9 лет</p>
+                        </div>
+                        <div class="table__center">
+                            <p>2 раза в неделю по 2 ак. часа</p>
+                            <p>17:00 - 18:30</p>
+                        </div>
+                        <div class="table__right">
+                            <p><span> 28 800 р.</span> (1 ак. час = 600 р.) за 24 занятия</p>
+                            <p>Оплата 3 раза в год</p>
+                            <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с
+                                учебным планов</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="container">
+                <h1 class="section-4__title title">Экзамены</h1>
+                <div class="section-4__article article">
+                    <div class="article__item">
+                        <img src="img/section4/1.jpg" alt="">
+                        <h3 class="article__title">Massa fringilla rhoncus purus gravida magnis. </h3>
+                        <ul class="article__text">
+                            <li>Sed viverra in nulla duis elit purus urna.</li>
+                            <li>Enim volutpat nisi, sit eget sed consectetur consectetur. </li>
+                            <li>Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi</li>
                         </ul>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <img src="img/section4/2.jpg" alt="">
+                        <h3 class="article__title">Erat magna at elementum faucibus tristique lorem. </h3>
+                        <ul class="article__text">
+                            <li>Sed viverra in nulla duis elit purus urna.</li>
+                            <li>Enim volutpat nisi, sit eget sed consectetur consectetur. </li>
+                            <li>Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi</li>
+                        </ul>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <img src="img/section4/3.jpg" alt="">
+                        <h3 class="article__title">Libero at pulvinar sagittis odio et luctus mattis.</h3>
+                        <ul class="article__text">
+                            <li>Sed viverra in nulla duis elit purus urna.</li>
+                            <li>Enim volutpat nisi, sit eget sed consectetur consectetur. </li>
+                            <li>Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi</li>
+                        </ul>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <img src="img/section4/4.jpg" alt="">
+                        <h3 class="article__title">Laoreet ut aliquam rhoncus lectus. Faucibus.</h3>
+                        <ul class="article__text">
+                            <li>Sed viverra in nulla duis elit purus urna.</li>
+                            <li>Enim volutpat nisi, sit eget sed consectetur consectetur. </li>
+                            <li>Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi</li>
+                        </ul>
+                        <button class="article__btn btn">Подробнее</button>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section-5">
+            <div class="container">
+                <h1 class="section-5__title title">Мероприятия</h1>
+                <div class="section-5__article article">
+                    <div class="article__item">
+                        <img src="img/section5/1.jpg" alt="">
+                        <h3 class="article__title">Sed sem vulputate habitant quis eu, vitae quis porttitor augue. </h3>
+                        <p class="article__text">
+                            Elementum, sed viverra volutpat nam lacus egestas. Scelerisque quisque egestas maecenas
+                            fermentum semper auctor massa tincidunt. Tristique pulvinar commodo fermentum neque.
+                            Elementum tortor.
+                        </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <img src="img/section5/2.jpg" alt="">
+                        <h3 class="article__title">Magna rhoncus facilisi aliquam odio tempus. Non felis cras.</h3>
+                        <p class="article__text">Tempus libero commodo velit ut aliquam. Sagittis, tristique porttitor
+                            platea eu imperdiet interdum cras. Hac blandit sed integer nibh diam in lacus ac. Congue
+                            nibh id rhoncus tincidunt imperdiet.
+                        </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <img src="img/section5/3.jpg" alt="">
+                        <h3 class="article__title">Id adipiscing aliquet erat mattis. Cursus metus malesuada congue.
+                        </h3>
+                        <p class="article__text">Dis non mauris placerat in dictum ullamcorper adipiscing morbi
+                            dignissim. Commodo dolor ornare nibh sed pretium tellus. Urna, imperdiet id ac venenatis
+                            erat mattis risus, molestie. Felis porta. </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-6">
+            <div class="container">
+                <h1 class="section-6__title title">Новости школы</h1>
+                <div class="section-6__article article">
+                    <div class="article__item">
+
+                        <h3 class="article__title">Eu faucibus facilisi est pharetra, augue vulputate nisi elementum.
+                            Molestie id.</h3>
+                        <p class="article__text">
+                            Commodo bibendum eget purus vivamus amet ut. Nisl habitant tellus augue quam lectus
+                            elementum platea. A imperdiet facilisis quis aliquet. Venenatis sit nibh pellentesque
+                            interdum sem. Donec vitae tristique vel dictum sagittis a purus.
+                        </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+
+                        <h3 class="article__title">Semper aenean amet malesuada aliquam. Urna, ornare tincidunt quam
+                            non. </h3>
+                        <p class="article__text">Augue laoreet elit urna enim fames leo habitant viverra. Turpis
+                            volutpat, scelerisque odio enim tincidunt sit. Duis quam enim vel tempus id scelerisque
+                            sapien risus. Ut ut augue porttitor urna ullamcorper hendrerit rutrum metus non. Amet a at
+                            integer aenean.
+                        </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <h3 class="article__title">Sed blandit mauris, varius semper amet dolor gravida tincidunt quis.
+                            Ultrices.
+                        </h3>
+                        <p class="article__text">Morbi diam eu risus amet, id egestas quam. Scelerisque lorem
+                            consectetur cras nisl risus congue. Nisl sed tellus magna eu, ac fames. Lacinia aliquam mi
+                            proin massa. Integer nulla netus tempus, ac netus suscipit pharetra bibendum ut. Eget ligula
+                            sodales aenean. </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                    <div class="article__item">
+                        <h3 class="article__title">Id adipiscing aliquet erat mattis. Cursus metus malesuada congue.
+                        </h3>
+                        <p class="article__text">MEt nisl quis sit euismod sit senectus ut interdum. Consequat faucibus
+                            fermentum in vitae aliquam, venenatis pellentesque purus. Venenatis interdum tempus aliquet.
+                        </p>
+                        <button class="article__btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="info">
+                    <div class="info__title">Школа испанского ЯЗЫКА <br>
+                        «ЛаВИта» в петербурге</div>
+                    <div class="row-1__address">Лиговский пр. 133 Е</div>
+                    <div class="row-1__phone">+7 (911) 123-45-67</div>
+                    <div class="row-1__email">lavita_school@gmail.com</div>
+                    <div class="info_logo">
+                        <a href="https://vk.ru/" target="_blank">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <g clip-path="url(#clip0_12905_64)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M26.7031 18.4468C26.7031 18.4468 29.1286 20.8423 29.7286 21.9508C29.7403 21.9668 29.7494 21.9845 29.7556 22.0033C30.0001 22.4128 30.0601 22.7338 29.9401 22.9708C29.7376 23.3623 29.0521 23.5588 28.8196 23.5753H24.5326C24.2341 23.5753 23.6131 23.4973 22.8571 22.9753C22.2796 22.5718 21.7051 21.9073 21.1486 21.2578C20.3176 20.2933 19.5991 19.4563 18.8716 19.4563C18.7798 19.4561 18.6885 19.4713 18.6016 19.5013C18.0511 19.6753 17.3521 20.4598 17.3521 22.5493C17.3521 23.2033 16.8361 23.5753 16.4746 23.5753H14.5111C13.8421 23.5753 10.3591 23.3413 7.27064 20.0848C3.48614 16.0978 0.0871351 8.09982 0.0541351 8.02932C-0.157365 7.51182 0.286635 7.22982 0.766635 7.22982H5.09564C5.67614 7.22982 5.86514 7.58082 5.99714 7.89582C6.15014 8.25732 6.71714 9.70332 7.64714 11.3278C9.15314 13.9708 10.0786 15.0463 10.8181 15.0463C10.9571 15.0467 11.0937 15.0105 11.2141 14.9413C12.1801 14.4103 12.0001 10.9603 11.9551 10.2493C11.9551 10.1113 11.9536 8.70882 11.4586 8.03082C11.1046 7.54482 10.5016 7.35582 10.1371 7.28682C10.2346 7.14582 10.4416 6.92982 10.7071 6.80232C11.3686 6.47232 12.5641 6.42432 13.7506 6.42432H14.4091C15.6961 6.44232 16.0291 6.52482 16.4971 6.64332C17.4391 6.86832 17.4571 7.47882 17.3746 9.55782C17.3506 10.1518 17.3251 10.8208 17.3251 11.6083C17.3251 11.7763 17.3176 11.9638 17.3176 12.1543C17.2891 13.2208 17.2516 14.4223 18.0046 14.9158C18.1023 14.9767 18.2151 15.0089 18.3301 15.0088C18.5911 15.0088 19.3726 15.0088 21.4921 11.3713C22.4221 9.76482 23.1421 7.87032 23.1916 7.72782C23.2336 7.64832 23.3596 7.42482 23.5126 7.33482C23.6215 7.27691 23.7434 7.24798 23.8666 7.25082H28.9591C29.5141 7.25082 29.8906 7.33482 29.9641 7.54482C30.0871 7.88532 29.9401 8.92482 27.6151 12.0688C27.2236 12.5923 26.8801 13.0453 26.5786 13.4413C24.4711 16.2073 24.4711 16.3468 26.7031 18.4468Z"
+                                        fill="#333333" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_12905_64">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></a>
+                        <a href="https://www.youtube.com/" target="_blank"> <svg width="30" height="30"
+                                viewBox="0 0 30 30" fill="none">
+                                <g clip-path="url(#clip0_12905_66)">
+                                    <path
+                                        d="M29.3748 8.1336C29.2049 7.52764 28.874 6.97903 28.4173 6.5461C27.9477 6.09986 27.372 5.78065 26.7448 5.6186C24.3973 4.99985 14.9923 4.99985 14.9923 4.99985C11.0715 4.95524 7.15158 5.15144 3.2548 5.58735C2.62753 5.76137 2.053 6.08771 1.58229 6.53735C1.11979 6.98235 0.784795 7.5311 0.609795 8.13235C0.189411 10.397 -0.0148401 12.6965 -0.000205083 14.9999C-0.0152051 17.3011 0.188545 19.5999 0.609795 21.8674C0.781045 22.4661 1.11479 23.0124 1.57854 23.4536C2.04229 23.8949 2.6198 24.2136 3.2548 24.3824C5.63354 24.9999 14.9923 24.9999 14.9923 24.9999C18.9181 25.0445 22.843 24.8483 26.7448 24.4124C27.372 24.2503 27.9477 23.9311 28.4173 23.4849C28.8739 23.052 29.2044 22.5033 29.3735 21.8974C29.8049 19.6335 30.0146 17.3331 29.9998 15.0286C30.0322 12.7144 29.8228 10.4031 29.3748 8.13235V8.1336ZM12.0023 19.2799V10.7211L19.8273 15.0011L12.0023 19.2799Z"
+                                        fill="#333333" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_12905_66">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M25.8312 4.64627L3.66875 13.1925C2.15625 13.8 2.165 14.6438 3.39125 15.02L9.08125 16.795L22.2462 8.48877C22.8687 8.11002 23.4375 8.31377 22.97 8.72877L12.3037 18.355H12.3012L12.3037 18.3563L11.9112 24.2213C12.4862 24.2213 12.74 23.9575 13.0625 23.6463L15.8262 20.9588L21.575 25.205C22.635 25.7888 23.3962 25.4888 23.66 24.2238L27.4337 6.43877C27.82 4.89002 26.8425 4.18877 25.8312 4.64627Z"
+                                    fill="#333333" />
+                            </svg></a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M20.955 27.0542C15.9581 27.0542 11.9062 23.6792 11.9062 19.5204C11.9062 15.3579 15.9544 11.9829 20.9513 11.9829C25.9481 11.9829 30 15.3579 30 19.5204C30 21.7892 28.7812 23.8348 26.8763 25.2129C26.7703 25.2882 26.6912 25.3954 26.6507 25.519C26.6102 25.6425 26.6104 25.7758 26.6513 25.8992L27.06 27.4179C27.0853 27.4891 27.1035 27.5626 27.1144 27.6373C27.1125 27.7172 27.0799 27.7934 27.0233 27.85C26.9667 27.9065 26.8906 27.9391 26.8106 27.941C26.749 27.9387 26.6893 27.9192 26.6381 27.8848L24.6562 26.741C24.5111 26.6538 24.3456 26.606 24.1763 26.6023C24.0861 26.6028 23.9964 26.616 23.91 26.6417C22.9493 26.9174 21.9545 27.0563 20.955 27.0542ZM16.995 17.891C17.1091 18.0661 17.2665 18.2088 17.4519 18.3052C17.6374 18.4016 17.8446 18.4485 18.0534 18.4412C18.2623 18.434 18.4658 18.3729 18.6441 18.2639C18.8224 18.155 18.9696 18.0017 19.0713 17.8192C19.173 17.6366 19.2258 17.4308 19.2246 17.2218C19.2233 17.0128 19.1682 16.8077 19.0644 16.6263C18.9605 16.4449 18.8116 16.2934 18.6321 16.1865C18.4525 16.0796 18.2483 16.0208 18.0394 16.016C17.8801 16.0158 17.7223 16.047 17.5751 16.1079C17.4279 16.1688 17.2942 16.2582 17.1817 16.3709C17.0691 16.4836 16.98 16.6175 16.9193 16.7648C16.8586 16.9121 16.8276 17.0699 16.8281 17.2292C16.8162 17.4618 16.8751 17.6925 16.9969 17.891H16.995ZM23.055 17.8929C23.1697 18.068 23.3278 18.2103 23.5138 18.3061C23.6999 18.4019 23.9076 18.4478 24.1167 18.4394C24.3259 18.431 24.5292 18.3686 24.707 18.2582C24.8848 18.1478 25.031 17.9933 25.1313 17.8096C25.2316 17.6259 25.2825 17.4194 25.2793 17.2101C25.276 17.0009 25.2185 16.796 25.1125 16.6156C25.0065 16.4351 24.8556 16.2852 24.6744 16.1805C24.4932 16.0758 24.288 16.0197 24.0788 16.0179C23.7587 16.0184 23.4518 16.1458 23.2255 16.3721C22.9991 16.5985 22.8717 16.9053 22.8713 17.2254C22.8641 17.4613 22.9281 17.6939 23.055 17.8929Z"
+                                    fill="#333333" />
+                                <path
+                                    d="M0 12.7987C0 15.5269 1.46437 17.9831 3.75187 19.6538C3.87954 19.7435 3.97468 19.8723 4.02302 20.0207C4.07135 20.1691 4.0703 20.3291 4.02 20.4769L3.71813 21.6019L3.53063 22.3013C3.49807 22.3854 3.47786 22.4738 3.47062 22.5638C3.47038 22.6113 3.47957 22.6585 3.49766 22.7025C3.51576 22.7465 3.54241 22.7865 3.57606 22.8202C3.60971 22.8538 3.64971 22.8805 3.69372 22.8986C3.73774 22.9167 3.78491 22.9259 3.8325 22.9256C3.90562 22.9256 3.97687 22.9069 4.04063 22.8713L6.41813 21.4969C6.59292 21.3924 6.79202 21.3355 6.99563 21.3319C7.10437 21.3319 7.21312 21.3488 7.31625 21.3787C8.30851 21.6635 9.33156 21.8271 10.3631 21.8662C10.1415 21.1041 10.0298 20.3143 10.0312 19.5206C10.0312 14.0156 15.2531 10.1081 20.9513 10.1081C21.045 10.1081 21.1388 10.1081 21.2325 10.1119C19.8506 6.42938 15.735 3.75 10.8675 3.75C4.8675 3.75 0 7.8 0 12.7987ZM8.685 9.88312C8.685 10.266 8.53289 10.6333 8.26214 10.904C7.99138 11.1748 7.62416 11.3269 7.24125 11.3269C6.85834 11.3269 6.49112 11.1748 6.22036 10.904C5.94961 10.6333 5.7975 10.266 5.7975 9.88312C5.7975 9.50022 5.94961 9.133 6.22036 8.86224C6.49112 8.59148 6.85834 8.43937 7.24125 8.43937C7.62416 8.43937 7.99138 8.59148 8.26214 8.86224C8.53289 9.133 8.685 9.50022 8.685 9.88312ZM15.9506 9.88312C15.9506 10.266 15.7985 10.6333 15.5278 10.904C15.257 11.1748 14.8898 11.3269 14.5069 11.3269C14.124 11.3269 13.7567 11.1748 13.486 10.904C13.2152 10.6333 13.0631 10.266 13.0631 9.88312C13.0631 9.50022 13.2152 9.133 13.486 8.86224C13.7567 8.59148 14.124 8.43937 14.5069 8.43937C14.8898 8.43937 15.257 8.59148 15.5278 8.86224C15.7985 9.133 15.9506 9.50022 15.9506 9.88312Z"
+                                    fill="#333333" />
+                            </svg></a>
+                    </div>
+                </div>
+                <ul class="about-us">
+                    <li class="footer__title">О нас</li>
+                    <li>Основные сведения</li>
+                    <li>Структура и органы управления <br> образовательной организацией</li>
+                    <li>Документы</li>
+                    <li>Образование</li>
+                    <li>Образовательные стандарты</li>
+                    <li>Руководство. Педагогический <br> (научно-педагогический) состав</li>
+                    <li>Материально-техническое <br> обеспечение и оснащенность <br> образовательного процесса</li>
+                    <li>Доступная среда</li>
+                </ul>
+                <div class="pay-learning">
+                    <ul class="pay">
+                        <li class="footer__title">Расписание и оплата</li>
+                        <li>Расписание занятий</li>
+                        <li>Курсы и стоимость</li>
+                        <li>Расписание работы кассы</li>
+                    </ul>
+                    <ul class="learning">
+                        <li class="footer__title">Обучение в китае</li>
+                        <li>Стипендиальные программы</li>
+                        <li>Лингвистические лагеря</li>
+                        <li>Оформление визы на обучение</p>
+                    </ul>
+                </div>
+                <ul class="exam">
+                    <li class="footer__title">Экзамены</li>
+                    <li>MSK 1</li>
+                    <li>OPT</li>
+                    <li>YSV</li>
+                    <li>NNB</li>
+                    <li>Порядок регистрации на <br> онлайн экзамен</li>
+                    <li>Порядок регистрации на очный <br> экзамен</li>
+                    <li>Расписание экзаменов</li>
+                </ul>
+                <ul class="scool">
+                    <li class="footer__title">Школа</li>
+                    <li>Новости</li>
+                    <li>Мероприятия</li>
+                    <li>Фотогалерея</li>
+                    <li>Контакты</li>
+                    <li>Отзывы</li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <p>© «ЛАВИТА» 2021</p>
+                <p>Разработал Е.С.Пуца</p>
+            </div>
         </div>
-        </header>
-        <main class="main">
-            <section class="section-1">
-                <div class="container">
-                    <div class="section-1__text">ИДЕТ НАБОР НА ОБУЧЕНИЕ В ШКОЛУ "ЛАВИТА" В НЕВСКОМ РАЙОНЕ ПЕТЕРБУРГА! УСПЕЙ ЗАПИСАТЬСЯ!</div>
-                    <div class="section-1__btn btn">Подробнее</div>
-                </div>
-            </section>
-            <section class="section-2">
-                <div class="container">
-                    <div class="section-2__school-lavita">
-                        <div class="section-2__title">Школа “Лавита”</div>
-                         <div class="section-2__text">Eleifend purus dictum nunc, aenean tincidunt massa libero. Aliquam nullam enim at ac. Imperdiet risus mi quis vitae non. Cursus scelerisque donec vulputate ante etiam libero donec ridiculus at. Phasellus at nullam dapibus ut in. Vulputate consequat purus tellus vel cras. Eu sollicitudin arcu faucibus turpis venenatis.
-                            Aliquet auctor tempus, erat at interdum eu. Sapien amet, amet sit non at sodales volutpat. <br> <br> Cursus et laoreet eget velit a tortor eu nibh mattis. Mi facilisi ultrices maecenas id.</div>
-                    
-                        </div>
-                        <div class="section-2__background">
-                            <img src="img/section2_logo.png" alt="">
-                        </div>
-                </div>
-            </section>
-            <section class="section-3">
-                hello
-            </section>
-        </main>
-    </body>
+    </footer>
+</body>
+
 </html>
