@@ -6,19 +6,40 @@
   font-family: Heebo, sans-serif;
   border: none;
 }
-* a {
-  text-decoration: none;
-}
 
 @keyframes button {
-  0% {
-    transform: scale(1);
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
   }
-  50% {
-    transform: scale(1.1);
+  10% {
+    transform: translateX(-10px) rotate(-3deg);
+  }
+  15% {
+    transform: translateX(7px) rotate(3deg);
+  }
+  20% {
+    transform: translateX(-7px) rotate(-3.6deg);
+  }
+  25% {
+    transform: translateX(3px) rotate(3.6deg);
+  }
+  30% {
+    transform: translateX(-3px) rotate(0deg);
+  }
+}
+@keyframes tracking-out-expand-fwd {
+  0% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
   }
   100% {
-    transform: scale(1);
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    opacity: 0;
   }
 }
 .container {
@@ -42,14 +63,17 @@
   line-height: 140%;
   white-space: nowrap;
   text-align: center;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #ca0011;
+}
+.btn:active {
+  transform: translateY(3px);
 }
 @media (max-width: 1350px) {
   .btn {
     transform: scale(1.2);
-  }
-  .btn:hover {
-    background: #ca0011;
   }
 }
 
@@ -59,6 +83,21 @@
   font-weight: 800;
   line-height: 140%;
   letter-spacing: 0.48px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+@media (min-width: 768px) {
+  a:hover::after {
+    height: 100%;
+  }
+  a:active {
+    transform: translateY(3px);
+  }
 }
 
 .row-1 {
@@ -85,14 +124,15 @@
     display: none;
   }
 }
-.row-1 .row-1__info div {
+.row-1 .row-1__info a {
+  color: #333;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
   margin-right: 45px;
 }
-.row-1 .row-1__info div:last-child {
+.row-1 .row-1__info a:last-child {
   margin-right: 0;
 }
 .row-1 .row-1__info .row-1__address::before {
@@ -114,7 +154,7 @@
   top: 8px;
 }
 .row-1 .row-1__btn {
-  animation: button 2s infinite ease-in-out;
+  animation: button 3s both infinite;
 }
 
 .row-2 {
@@ -140,6 +180,7 @@
   }
 }
 .row-2 .list a {
+  display: inline-block;
   position: relative;
   font-size: 14px;
   font-weight: 700;
@@ -535,28 +576,23 @@
     transform: scale(0.95);
   }
 }
-.footer .container .footer__top .about-us {
-  margin-right: 69px;
-  display: none;
-}
 .footer .container .footer__top .footer__title {
   color: #333;
   font-size: 20px;
   font-weight: 700;
   line-height: 140%;
   margin-bottom: 25px;
-  display: block;
 }
-.footer .container .footer__top .pay-learning {
+.footer .container .footer__top .footer__title .pay-learning {
   margin-right: 69px;
 }
-.footer .container .exam {
+.footer .container .footer__top .exam {
   margin-right: 69px;
 }
-.footer .container .scool {
+.footer .container .footer__top .scool {
   margin-right: 110px;
 }
-.footer .footer__bottom {
+.footer .container .footer__bottom {
   height: 70px;
   display: flex;
   justify-content: space-between;
