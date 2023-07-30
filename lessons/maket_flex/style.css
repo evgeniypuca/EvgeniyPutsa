@@ -215,6 +215,7 @@ a {
   height: 700px;
   background: url(img/background.png) 0 0 no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .section-1 .container {
   display: flex;

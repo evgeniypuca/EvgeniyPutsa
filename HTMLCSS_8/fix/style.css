@@ -28,9 +28,9 @@ header {
 }
 
 .main {
+background: url(img/back_left.jpeg) repeat-y,
+url(img/bool.png) repeat-y right ;
 
-   background-image: url(img/back_left.jpeg);
-   background-repeat: repeat-y;
 }
 
 .left {
@@ -46,10 +46,6 @@ header {
    text-align: center;
    overflow: hidden;
    margin-left: 280px;
-   background-image: url(img/bool.png);
-   background-repeat: repeat-y;
-   background-position: right;
-   background-size: 70px;
 }
 
 img {

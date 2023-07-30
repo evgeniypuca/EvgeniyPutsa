@@ -281,8 +281,9 @@ a {
 
 .section-1 {
     height: 700px;
-    background: url(img/background.png) 0 0 no-repeat;
+    background: url(img/background.png)  0 0 no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     .container {
         display: flex;
