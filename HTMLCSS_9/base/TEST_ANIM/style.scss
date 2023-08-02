@@ -1,28 +1,34 @@
 body {
     box-sizing: border-box
 }
-.container{
+
+.container {
     margin: 0 auto;
-    width: 500px;   
+    width: 500px;
     background-color: #cacaca;
     display: flex;
     flex-direction: column;
     align-items: center;
     perspective: 500px;
-    & div{
+
+    & div {
         width: 150px;
         height: 150px;
     }
-    &:hover .anim2{
+
+    &:hover .anim2 {
         transform: scale(0.8);
     }
-    &:hover .anim3{
+
+    &:hover .anim3 {
         transform: rotate(-50deg);
     }
-    &:hover .anim4{
+
+    &:hover .anim4 {
         transform: skew(45deg);
     }
-    &:hover .anim5{
+
+    &:hover .anim5 {
         transform: translate3d(0, 0, 200px);
     }
 }
@@ -31,12 +37,28 @@ body {
 
 
 @keyframes w-h {
-    0%, 100%  { transform: translate(0, 0);}
-    20%  { transform: translate(240px, 0); }
-    40%  { transform: translate(240px, 140px); }
-    60%  { transform: translate(-240px, 140px);}
-    80%  { transform: translate(-240px, 0px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
     }
+
+    20% {
+        transform: translate(240px, 0);
+    }
+
+    40% {
+        transform: translate(240px, 140px);
+    }
+
+    60% {
+        transform: translate(-240px, 140px);
+    }
+
+    80% {
+        transform: translate(-240px, 0px);
+    }
+}
 
 
 
@@ -47,25 +69,51 @@ body {
     background-color: red;
     animation: w-h 4s ease-in-out infinite;
 }
+
 .anim2 {
 
     background-color: rgb(11, 28, 185);
-    transition: 2s ease ;
+    transition: 2s ease;
 
 }
+
 .anim3 {
 
     background-color: rgb(45, 128, 7);
-    transition: 1s ease ;
-    
+    transition: 1s ease;
+
 }
+
 .anim4 {
 
     background-color: rgb(199, 233, 48);
-    transition: 1s ease ;
+    transition: 1s ease;
 }
+
 .anim5 {
 
     background-color: rgb(250, 126, 55);
-    transition: 1s ease ;
+    transition: 1s ease;
+}
+
+
+@keyframes spr {
+    from {
+        background: url(sprite2.png) 0px 0px no-repeat;
+    }
+
+    to {
+        background: url(sprite2.png) -1720px 0px no-repeat ;
+    }
+
+
+}
+
+
+#sprite {
+    margin: 150px 0;
+    width: 125px;
+    height: 190px;
+    animation: spr 2s steps(14) infinite;
+
 }

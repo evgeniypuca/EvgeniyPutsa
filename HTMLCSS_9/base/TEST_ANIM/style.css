@@ -68,4 +68,19 @@ body {
 .anim5 {
   background-color: rgb(250, 126, 55);
   transition: 1s ease;
+}
+
+@keyframes spr {
+  from {
+    background: url(sprite2.png) 0px 0px no-repeat;
+  }
+  to {
+    background: url(sprite2.png) -1720px 0px no-repeat;
+  }
+}
+#sprite {
+  margin: 150px 0;
+  width: 125px;
+  height: 190px;
+  animation: spr 2s steps(14) infinite;
 }/*# sourceMappingURL=style.css.map */
