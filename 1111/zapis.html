@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <section class="goods">
+        <div class="container">
+            <div class="goods__body">
+                <p class="goods__title title">
+                    Популярные товары
+                </p>
+                <div class="goods-slider">
+                    <div class="slider2__item good-item">
+                        <img  src="img/page-1/section-4/product.jpg" alt="good">
+                        <div class="good-item__description">
+                            <p class="good-item__name">Укулеле</p>
+                            <h4 class="good-item__model">Enya EUC-MAD</h4>
+                            <div class="good-item__info">
+                                <div class="good-items__cost">
+                                   <p class="good-item__cost-sale">₽24 890</p>
+                                   <p class="good-item__cost">₽24 890</p>
+                                </div>
+                                <div class="good-item__reviews">
+                                    <img src="img/page-1/section-4/rating.png" alt="rating">
+                                    <p>7 отзывов</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+           </div>
+        </div>
+    </section>
+
+
+
+
+    .good-item {
+
+        &__description {
+            padding: 11px 13px;
+    
+        }
+    
+        &__name {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 35px;
+        }
+    
+        &__model {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 35px
+        }
+    
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-top: 10px;
+        }
+    
+        &__cost {}
+    
+        &__cost-sale {
+            color: $grey;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-decoration: line-through;
+        }
+    
+        &__cost {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    
+        &__reviews {
+            color: $grey;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

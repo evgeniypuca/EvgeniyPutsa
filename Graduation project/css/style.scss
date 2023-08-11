@@ -1,0 +1,685 @@
+//-----Обнуление------------------------------------------------------------------------------
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ysabeau Infant', sans-serif;
+
+	ul,
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none
+	}
+
+}
+
+//-----Шрифты------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Doppio+One&family=Roboto:wght@100;300;400;500;700;900&family=Ysabeau+Infant:wght@400;500;600;700;800;900&display=swap');
+
+
+//-----Переменные------------------------------------------------------------------------------
+
+$orange: #CC7408;
+$grey: rgba(255, 255, 255, 0.60);
+$backgrond: #131218;
+
+
+
+//------Анимации----------------------------------------------------------------------------
+@keyframes slide-in-left {
+	0% {
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+@keyframes slide-in-right {
+	0% {
+		transform: translateX(1000px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+//------Общие стили----------------------------------------------------------------------------
+
+
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: $backgrond;
+	color: #fff;
+	// font-family: sans-serif;
+
+}
+
+.container {
+	max-width: 1084px;
+	margin: 0 auto;
+
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+
+	&::after {
+		content: "";
+		display: block;
+		height: 2px;
+		background: $orange;
+		margin-top: 10px;
+		width: 300px;
+	}
+}
+
+//------HEADER----------------------------------------------------------------------------
+
+
+.header {}
+
+.header-top {
+	max-width: 1400px;
+	padding: 0 20px;
+
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $grey;
+	font-family: 'Ysabeau Infant', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	height: 30px;
+	border-bottom: 1px solid #242424;
+	;
+
+	&__left {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-basis: 327px;
+
+		@media (max-width:1050px) {
+			flex-basis: 227px;
+		}
+
+		@media (max-width:950px) {
+			flex-basis: 127px;
+
+		}
+	}
+
+	&__city {
+		margin-right: 20px;
+	}
+
+	&__city-name {}
+
+	&__center {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex: 0 1 262px;
+
+		@media (max-width:800px) {
+			display: none;
+
+		}
+	}
+
+	&__right {
+		display: flex;
+
+	}
+
+	&__number {
+		font-size: 13px;
+		margin-left: 5px;
+
+	}
+}
+
+
+.social-icon {}
+
+.header-bottom__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.header-bottom {
+	padding: 0 20px;
+
+	&__logo {
+		transform: translateX(-11px);
+	}
+
+	&__menu {
+		flex: 0 1 608px;
+
+		@media (max-width:750px) {
+			display: none;
+		}
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+
+		}
+	}
+
+	&__link a {
+		color: #FFF;
+		text-align: center;
+		font-family: 'Ysabeau Infant', sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		@media (max-width:950px) {
+			font-size: 0.7em;
+		}
+
+	}
+
+	&__icons {
+		display: flex;
+		flex-wrap: nowrap;
+
+	}
+
+
+	&__icon {
+		margin-left: 20px;
+	}
+}
+
+//------section1 slider----------------------------------------------------------------------------
+
+.banner {
+
+
+	.container {}
+}
+
+.slick-track {
+	display: flex;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+
+
+
+.slider1 {
+	position: relative;
+
+	.slider1__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	.slider1__info {
+		position: absolute;
+		width: 253px;
+		right: 100px;
+		z-index: 50;
+
+		.slider1__title {
+			color: #fff;
+			font-family: 'Ysabeau Infant', sans-serif;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 35px;
+
+			span {
+				font-size: 18px;
+			}
+		}
+
+		.slider1__text {
+			margin-top: 10px;
+			color: #fff;
+			font-family: 'Ysabeau Infant', sans-serif;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 30px;
+
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 50;
+		font-size: 0;
+		width: 50px;
+		height: 60px;
+		border: none;
+		margin: 0 30px;
+	}
+
+	.slick-arrow.slick-prev {
+		left: 0;
+		background: url(../img/page-1/section-1/banner/next.png)0 0 / 100% no-repeat;
+		background-size: cover;
+		transform: translateY(-30px);
+	}
+
+	.slick-arrow.slick-next {
+		right: 0;
+		background: url(../img/page-1/section-1/banner/prev.png )0 0 / 100% no-repeat;
+		background-size: cover;
+		transform: translateY(-30px);
+	}
+
+}
+
+//------section2 product----------------------------------------------------------------------------
+
+
+.product {
+	height: 500px;
+	padding: 0 20px;
+
+	&__row {
+		display: flex;
+		margin: 0 -9px;
+		position: relative;
+		top: 70px;
+		left: 0;
+
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		padding: 0 9px;
+		animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+		& div {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 54px 0 100px 0;
+
+			p {
+				margin-top: 30px;
+				font-family: ABeeZee, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+	}
+
+	&__item1 {
+		background: url(../img/page-1/section-2/1.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	&__item2 {
+		background: url(../img/page-1/section-2/3.jpg)center center no-repeat;
+		background-size: cover;
+	}
+
+	&__item3 {
+		background: url(../img/page-1/section-2/2.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	&__item4 {
+		background: url(../img/page-1/section-2/4.jpg) 0 0 no-repeat;
+		background-size: cover;
+	}
+
+}
+
+//------section3 brands----------------------------------------------------------------------------
+
+
+.brands {
+	background-color: $orange;
+	margin-top: 200px;
+	overflow: hidden;
+
+	.container {
+		padding: 0 20px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-top: 200px;
+	}
+
+	&__item {
+		width: 20%;
+		margin-bottom: 15px;
+		overflow: hidden;
+
+		img {
+			max-width: 80%;
+		}
+	}
+}
+
+//------section4 Goods----------------------------------------------------------------------------
+.goods {
+	position: relative;
+
+	.container {
+		padding: 0 50px;
+
+	}
+
+	&__body {
+		margin-top: 86px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin-bottom: 42px;
+
+	}
+
+}
+
+
+
+.slider2 {
+	min-width: 0;
+
+	.slick-track {
+		display: flex;
+	}
+
+	.slick-list {
+		overflow: hidden;
+		margin: 0 15px 0 26px;
+	}
+
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 50;
+		font-size: 0;
+		width: 50px;
+		height: 60px;
+		border: none;
+	}
+
+	.slick-arrow.slick-prev {
+		left: -42px;
+		background: url(../img/page-1/section-1/banner/next.png)0 0 / 100% no-repeat;
+		background-size: cover;
+		transform: translateY(-30px);
+	}
+
+	.slick-arrow.slick-next {
+		right: -30px;
+		background: url(../img/page-1/section-1/banner/prev.png )0 0 / 100% no-repeat;
+		background-size: cover;
+		transform: translateY(-30px);
+	}
+
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 22px;
+	}
+
+	.slick-dots li {
+		list-style: none;
+		margin: 0 10px;
+	}
+
+	.slick-dots button {
+		font-size: 0;
+		height: 5px;
+		width: 50px;
+		background-color: $grey;
+		border: $grey;
+	}
+
+	.slick-dots li.slick-active button {
+		background-color: #FFF;
+		border: #FFF 1px solid;
+	}
+
+}
+
+.good-item {
+	font-size: 0;
+
+	&__description {
+		padding: 0 13px 11px 13px;
+		max-width: 220px;
+		background-color: #3B3A40;
+	}
+
+	&__name {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 35px;
+	}
+
+	&__model {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 35px
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		margin-top: 10px;
+	}
+
+	&__cost {}
+
+	&__cost-sale {
+		color: $grey;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		text-decoration: line-through;
+	}
+
+	&__cost {
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	&__reviews {
+		color: $grey;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+
+}
+
+//------section5 services----------------------------------------------------------------------------
+
+
+.services {
+
+	&__body {
+		margin-top: 65px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin-bottom: 42px;
+	}
+
+	&__type {
+		display: flex;
+		justify-content: space-between;
+		div{
+			position: relative;
+		}
+	}
+
+	&__type1::after {
+		content: "ОБУЧЕНИЕ";
+		font-size: 24px;
+		line-height: 35px; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 98px;
+		width: 100%;
+		background-color: rgba(19, 18, 24, 0.80);
+		transition: all 0.5s ease;
+		
+	}
+	&__type1:hover::after {
+		height: 100%;
+		content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
+		padding: 17px 20px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		box-sizing:border-box;
+	}
+	&__type2::after {
+		content: "ОБСЛУЖИВАНИЕ";
+		font-size: 24px;
+		line-height: 35px; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 98px;
+		width: 100%;
+		background-color: rgba(19, 18, 24, 0.80);
+		transition: all 0.5s ease;
+		
+	}
+	&__type2:hover::after {
+		height: 100%;
+		content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
+		padding: 17px 20px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		box-sizing:border-box;
+	}
+
+	&__type3::after {
+		content: "РЕМОНТ";
+		font-size: 24px;
+		line-height: 35px; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 98px;
+		width: 100%;
+		background-color: rgba(19, 18, 24, 0.80);
+		transition: all 0.5s ease;
+		
+	}
+	&__type3:hover::after {
+		height: 100%;
+		content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
+		padding: 17px 20px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		box-sizing:border-box;
+	}
+}
+
+
+//------section6 Join----------------------------------------------------------------------------
+.join {
+	background:url(../img/page-1/section-6/background.jpg) 0 0 no-repeat   ;
+	.container{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__form {
+		background: #fcf7f2;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+		border-radius: 30px;
+		width: 600px;
+		padding: 40px 36px 36px 45px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__subtitle {
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__input {
+	}
+
+	&__button {
+	}
+
+	&__chechbox {
+	}
+}
