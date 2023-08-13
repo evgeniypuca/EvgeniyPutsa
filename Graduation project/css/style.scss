@@ -5,17 +5,20 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Ysabeau Infant', sans-serif;
-
-	ul,
-	li {
-		list-style: none;
-	}
-
-	a {
-		text-decoration: none
-	}
+	border: none;
 
 }
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 
 //-----Шрифты------------------------------------------------------------------------------
 
@@ -86,6 +89,14 @@ $backgrond: #131218;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 35px;
+	@media (max-width:950px) {
+		font-size: 30px;
+
+	}
+	@media (max-width:650px) {
+		font-size: 20px;
+
+	}
 
 	&::after {
 		content: "";
@@ -133,10 +144,19 @@ $backgrond: #131218;
 			flex-basis: 127px;
 
 		}
+		@media (max-width:650px) {
+			flex-basis: 42px;
+
+		}
+		
 	}
 
 	&__city {
 		margin-right: 20px;
+				@media (max-width:650px) {
+			display: none;
+
+		}
 	}
 
 	&__city-name {}
@@ -156,12 +176,21 @@ $backgrond: #131218;
 	&__right {
 		display: flex;
 
+
 	}
 
 	&__number {
 		font-size: 13px;
 		margin-left: 5px;
+		@media (max-width:650px) {
+			font-size: 0.8em;
 
+		}
+		& span {
+			@media (max-width:650px) {
+				display: none;	
+			}
+		}
 	}
 }
 
@@ -180,6 +209,12 @@ $backgrond: #131218;
 
 	&__logo {
 		transform: translateX(-11px);
+
+		& a{
+			@media (max-width:950px) {
+			width: 80%;;
+		}
+	}
 	}
 
 	&__menu {
@@ -256,6 +291,10 @@ $backgrond: #131218;
 		width: 253px;
 		right: 100px;
 		z-index: 50;
+		@media (max-width:650px) {
+			right: 10px;
+		}
+
 
 		.slider1__title {
 			color: #fff;
@@ -264,7 +303,12 @@ $backgrond: #131218;
 			font-style: normal;
 			font-weight: 400;
 			line-height: 35px;
-
+			@media (max-width:950px) {
+				font-size:24px;
+			}
+			@media (max-width:650px) {
+				font-size:20px;
+			}
 			span {
 				font-size: 18px;
 			}
@@ -278,7 +322,12 @@ $backgrond: #131218;
 			font-style: normal;
 			font-weight: 400;
 			line-height: 30px;
-
+			@media (max-width:950px) {
+				font-size:16px;
+			}
+			@media (max-width:650px) {
+				font-size:12px;
+			}
 		}
 	}
 
@@ -432,6 +481,8 @@ $backgrond: #131218;
 
 	.slick-track {
 		display: flex;
+		justify-content: center;
+
 	}
 
 	.slick-list {
@@ -562,7 +613,8 @@ $backgrond: #131218;
 	&__type {
 		display: flex;
 		justify-content: space-between;
-		div{
+
+		div {
 			position: relative;
 		}
 	}
@@ -570,7 +622,7 @@ $backgrond: #131218;
 	&__type1::after {
 		content: "ОБУЧЕНИЕ";
 		font-size: 24px;
-		line-height: 35px; 
+		line-height: 35px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -581,8 +633,9 @@ $backgrond: #131218;
 		width: 100%;
 		background-color: rgba(19, 18, 24, 0.80);
 		transition: all 0.5s ease;
-		
+
 	}
+
 	&__type1:hover::after {
 		height: 100%;
 		content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
@@ -590,12 +643,13 @@ $backgrond: #131218;
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 30px;
-		box-sizing:border-box;
+		box-sizing: border-box;
 	}
+
 	&__type2::after {
 		content: "ОБСЛУЖИВАНИЕ";
 		font-size: 24px;
-		line-height: 35px; 
+		line-height: 35px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -606,8 +660,9 @@ $backgrond: #131218;
 		width: 100%;
 		background-color: rgba(19, 18, 24, 0.80);
 		transition: all 0.5s ease;
-		
+
 	}
+
 	&__type2:hover::after {
 		height: 100%;
 		content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
@@ -615,13 +670,13 @@ $backgrond: #131218;
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 30px;
-		box-sizing:border-box;
+		box-sizing: border-box;
 	}
 
 	&__type3::after {
 		content: "РЕМОНТ";
 		font-size: 24px;
-		line-height: 35px; 
+		line-height: 35px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -632,8 +687,9 @@ $backgrond: #131218;
 		width: 100%;
 		background-color: rgba(19, 18, 24, 0.80);
 		transition: all 0.5s ease;
-		
+
 	}
+
 	&__type3:hover::after {
 		height: 100%;
 		content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
@@ -641,19 +697,25 @@ $backgrond: #131218;
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 30px;
-		box-sizing:border-box;
+		box-sizing: border-box;
 	}
 }
 
 
 //------section6 Join----------------------------------------------------------------------------
 .join {
-	background:url(../img/page-1/section-6/background.jpg) 0 0 no-repeat   ;
-	.container{
+	background: url(../img/page-1/section-6/background.jpg)0 center no-repeat;
+	border-bottom: 2px solid #242424;
+	padding: 0 20px;
+	;
+
+	.container {
 		display: flex;
 		justify-content: flex-end;
 	}
+
 	&__form {
+		margin: 174px 0;
 		background: #fcf7f2;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 		border-radius: 30px;
@@ -662,24 +724,303 @@ $backgrond: #131218;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
+		@media (max-width:650px) {
+			width: 100%;
+			padding: 9px;
+		}
 	}
 
 	&__subtitle {
+		font-family: "Doppio One", sans-serif;
+		font-size: 18px;
+		text-align: center;
+		color: #3b3a40;
+		font-weight: 400;
+		@media (max-width:650px) {
+			font-size: 14px;
+		}
+
 	}
 
 	&__title {
+		font-family: "Doppio One", sans-serif;
+		font-size: 48px;
+		text-align: center;
+		color: $orange;
+		margin-bottom: 1px;
+		@media (max-width:650px) {
+			font-size: 36px;
+		}
 	}
 
 	&__text {
+		font-family: "Doppio One", sans-serif;
+		font-size: 14px;
+		text-align: center;
+		color: #bfb9b1;
+		margin-bottom: 41px;
+		font-weight: 400;
+		@media (max-width:650px) {
+			font-size: 12px;
+		}
 	}
 
+
+	&__input-body {
+		display: flex;
+		width: 100%;
+	}
+
+
 	&__input {
+		width: 452px;
+		height: 43px;
+		background: #f2eae0;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+		border-radius: 5px;
+		font-size: 18px;
+		color: rgba(59, 58, 64, 0.6);
+		@media (max-width:650px) {
+			width: 352px;
+			height: 33px;
+		}
+
 	}
 
 	&__button {
+		width: 77px;
+		height: 43px;
+		background: url(../img/page-1/section-6/send.svg) center no-repeat #CC7408;
+		border-radius: 5px;
+		margin-left: 11px;
+		flex: none;
+		border: none;
+		@media (max-width:650px) {
+			width: 45px;
+			height: 33px;
+		}
 	}
 
-	&__chechbox {
+	&__subtext {
+		align-self: flex-start;
+
+		a {
+			font-style: italic;
+			font-size: 14px;
+			color: rgba(196, 196, 196, 0.6);
+			margin-top: 6px;
+			text-decoration: underline;
+		}
 	}
+}
+
+//------Footer ----------------------------------------------------------------------------
+
+.footer {
+	padding: 0 20px;
+
+	&__row1 {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width:650px){
+			flex-direction: column;
+			}
+	}
+
+	&__row1-logo {
+		transform: translateX(-16px);
+		display: flex;
+		align-items: center;
+		& img { @media (max-width:950px){
+		width: 70%;
+
+		}
+	}
+}
+	&__row1-service {
+
+	}
+
+	&__row2 {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+
+}
+
+.service {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-basis: 433px;
+	margin-top: 52px;
+	@media (max-width:650px){
+		flex-basis: 100px;
+		}
+	
+	h5 {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 11px;
+		@media (max-width:950px){
+		font-size: 0.8em;
+		}
+	
+	}
+
+	a {
+		color: #C4C4C4;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@media (max-width:950px){
+			font-size: 0.8em;
+			}
+		
+	}
+}
+
+.service-type1 {}
+
+.service-type2 {}
+
+.service-type3 {}
+
+.column1 {
+	flex-basis: 400px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: $grey;
+	@media (max-width:950px){
+		font-size: 0.8em;
+		}
+		@media (max-width:650px){
+			flex-basis: 600px;
+			}
+
+	&__logo-text {
+		@media (max-width:650px){
+			display: none;
+			}
+
+		margin-bottom: 17px;
+	}
+
+	&__info1 {
+		margin-bottom: 15px;
+		max-width: 235px;
+		& p:last-child {
+			color: #FFF;
+			font-size: 24px;
+			@media (max-width:650px){
+				font-size: 14px;
+				}
+		}
+		@media (max-width:650px){
+			margin-top: 30px;
+
+			}
+	}
+
+	&__info2 {
+		margin-bottom: 15px;
+		max-width: 235px;
+		& p:last-child {
+			color: #FFF;
+			font-size: 24px;
+			@media (max-width:650px){
+				font-size: 14px;
+				}
+		}
+	}
+
+	&__info3 {
+		max-width: 235px;
+		margin-bottom: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width:650px){
+			max-width: none;
+			justify-content: space-evenly;
+			margin-top: 46px;
+			}
+	}
+
+	&__pay {
+		@media (max-width:650px){
+			display: none;
+			}
+	}
+
+	&__card {
+		& a:first-child span {
+			background: url(../img/page-1/footer/cards.png) 0 0px no-repeat;
+		}
+
+		& a:nth-child(2) span {
+			background: url(../img/page-1/footer/cards.png) -35px 0  no-repeat;
+		}
+
+		& a:nth-child(3) span {
+			background: url(../img/page-1/footer/cards.png) -70px 0px no-repeat;
+		}
+		& a:nth-child(4) span {
+			background: url(../img/page-1/footer/cards.png)-105px 0px no-repeat;
+		}
+		& a:last-child span {
+			background: url(../img/page-1/footer/cards.png) -140px 0px no-repeat;
+		}
+
+		span {
+			display: inline-block;
+			width: 34px;
+			height: 27px;
+
+		}
+
+	}
+
+	&__text {
+		margin-top: 175px;
+		@media (max-width:800px){
+			margin-top: 75px;
+			}
+			@media (max-width:650px){
+				display: none;
+				}
+	}
+}
+
+.social-icon {}
+
+.column2 {
+
+	&__img-phone {
+		margin-top: 51px;
+		display: flex;
+		justify-content: end;	
+		img, a{
+			@media (max-width:950px){
+			width: 80%;
+				text-align: end;
+			}
+		}
+		@media (max-width:650px){
+			display: none;
+			}
+	}
+
 }
