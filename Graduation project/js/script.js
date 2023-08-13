@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.slider1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         speed: 2000,
         // fade: true,
@@ -15,6 +15,32 @@ $(document).ready(function(){
     autoplaySpeed: 3000,
     speed: 1000,
     dots:true,
+    responsive:[
+        {
+            breakpoint:1100,
+            settings:{
+                slidesToShow: 3,
+                slidesToScroll: 3 
+            },
+            
+        },
+        {
+            breakpoint:850,
+            settings:{
+                slidesToShow: 2,
+                slidesToScroll: 2 
+            },
+            
+        },
+        {
+            breakpoint:650,
+            settings:{
+                slidesToShow: 1,
+                slidesToScroll: 1 
+            },
+            
+        }
+    ]
 });
     
 }); 
