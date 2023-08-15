@@ -18,26 +18,6 @@ a {
   color: inherit;
 }
 
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 .wrapper {
   width: 100%;
   display: flex;
@@ -79,6 +59,93 @@ a {
   background: #CC7408;
   margin-top: 10px;
   width: 300px;
+}
+
+.popup {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.7960784314);
+  top: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  position: relative;
+  background-color: #fff;
+  min-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: url(../img/page-1/iconsfont/popupclose.png) center center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__title {
+  font-family: "Doppio One", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: #CC7408;
+  margin-bottom: 1px;
+}
+@media (max-width: 650px) {
+  .popup__title {
+    font-size: 36px;
+  }
+}
+
+.popup__text {
+  font-family: "Doppio One", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #5a5a5a;
+  margin-bottom: 41px;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  .popup__text {
+    font-size: 12px;
+  }
+}
+
+.popup-fix {
+  position: fixed;
 }
 
 .header-top {
@@ -312,7 +379,6 @@ a {
   flex-direction: column;
   width: 50%;
   padding: 0 9px;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .product__column div {
   margin-top: 30px;
@@ -320,6 +386,11 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 54px 0 100px 0;
+}
+@media (max-width: 650px) {
+  .product__column div {
+    border-radius: 5px;
+  }
 }
 .product__column div p {
   margin-top: 30px;
@@ -329,21 +400,58 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 950px) {
+  .product__column div p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .product__column div p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 950px) {
+  .product__column div img {
+    width: 130px;
+  }
+}
+@media (max-width: 650px) {
+  .product__column div img {
+    width: 80px;
+  }
+}
 .product__item1 {
+  transition: all 0.5s ease;
   background: url(../img/page-1/section-2/1.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: 120%;
+}
+.product__item1:hover {
+  background-size: 160%;
 }
 .product__item2 {
+  transition: all 0.5s ease;
   background: url(../img/page-1/section-2/3.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: 120%;
+}
+.product__item2:hover {
+  background-size: 160%;
 }
 .product__item3 {
+  transition: all 0.5s ease;
   background: url(../img/page-1/section-2/2.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: 120%;
+}
+.product__item3:hover {
+  background-size: 160%;
 }
 .product__item4 {
-  background: url(../img/page-1/section-2/4.jpg) 0 0 no-repeat;
-  background-size: cover;
+  transition: all 0.5s ease;
+  background: url(../img/page-1/section-2/4.jpg) center center no-repeat;
+  background-size: 120%;
+}
+.product__item4:hover {
+  background-size: 160%;
 }
 
 .brands {
@@ -481,6 +589,9 @@ a {
   font-weight: 400;
 }
 
+.services {
+  padding: 0 20px;
+}
 .services__body {
   margin-top: 65px;
   display: flex;
@@ -492,9 +603,20 @@ a {
 .services__type {
   display: flex;
   justify-content: space-between;
+  gap: 13px;
 }
 .services__type div {
   position: relative;
+  overflow: hidden;
+}
+.services__type div img {
+  object-fit: none;
+}
+@media (max-width: 950px) {
+  .services__type div {
+    width: 250px;
+    height: 300px;
+  }
 }
 .services__type1::after {
   content: "ОБУЧЕНИЕ";
@@ -511,6 +633,12 @@ a {
   background-color: rgba(19, 18, 24, 0.8);
   transition: all 0.5s ease;
 }
+@media (max-width: 950px) {
+  .services__type1::after {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .services__type1:hover::after {
   height: 100%;
   content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
@@ -519,6 +647,13 @@ a {
   font-weight: 400;
   line-height: 30px;
   box-sizing: border-box;
+}
+@media (max-width: 650px) {
+  .services__type1:hover::after {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 5px;
+  }
 }
 .services__type2::after {
   content: "ОБСЛУЖИВАНИЕ";
@@ -535,6 +670,12 @@ a {
   background-color: rgba(19, 18, 24, 0.8);
   transition: all 0.5s ease;
 }
+@media (max-width: 950px) {
+  .services__type2::after {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .services__type2:hover::after {
   height: 100%;
   content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
@@ -543,6 +684,13 @@ a {
   font-weight: 400;
   line-height: 30px;
   box-sizing: border-box;
+}
+@media (max-width: 650px) {
+  .services__type2:hover::after {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 5px;
+  }
 }
 .services__type3::after {
   content: "РЕМОНТ";
@@ -559,6 +707,12 @@ a {
   background-color: rgba(19, 18, 24, 0.8);
   transition: all 0.5s ease;
 }
+@media (max-width: 950px) {
+  .services__type3::after {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .services__type3:hover::after {
   height: 100%;
   content: "В нашей гитарной мастерской мы оказываем полный спектр услуг по ремонту и обслуживанию  музыкальных инструментов, в том числе и изготовление на заказ. ";
@@ -567,6 +721,13 @@ a {
   font-weight: 400;
   line-height: 30px;
   box-sizing: border-box;
+}
+@media (max-width: 650px) {
+  .services__type3:hover::after {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 5px;
+  }
 }
 
 .join {
@@ -660,6 +821,15 @@ a {
   margin-left: 11px;
   flex: none;
   border: none;
+  position: relative;
+}
+.join__button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 @media (max-width: 650px) {
   .join__button {
@@ -863,7 +1033,8 @@ a {
   justify-content: end;
 }
 @media (max-width: 950px) {
-  .column2__img-phone img, .column2__img-phone a {
+  .column2__img-phone img,
+  .column2__img-phone a {
     width: 80%;
     text-align: end;
   }

@@ -11,15 +11,15 @@
       let name = prompt('Ваше имя');
       let surname = prompt('Ваше отчество');
       let age = Number(prompt('Ваш возраст'));
-      let sex = confirm('Вы мужчина?');
+      let gender = confirm('Вы мужчина?');
 
 
-      sex === true ? sex = 'Мужчина' : sex = 'женщина';
+      gender === true ? gender = 'Мужчина' : gender = 'женщина';
 
 
       let retired
 
-      sex === 'Мужчина' ?
+      gender === 'Мужчина' ?
          (age < 65) ?
             retired = 'нет' :
             retired = 'да'
@@ -33,7 +33,7 @@
          'ваш возраст в годах: ' + age + '\n' +
          'ваш возраст в днях: ' + age * 365 + '\n' +
          'через 5 лет вам будет: ' + (age + 5) + '\n' +
-         'ваш пол: ' + sex + '\n' +
+         'ваш пол: ' + gender + '\n' +
          'вы на пенсии: ' + retired
       );
 
