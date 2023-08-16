@@ -80,3 +80,6 @@ $('.slider3').slick({
 
 }); 
 
+function dropList(number) {
+    document.getElementById("Drop" + number).classList.toggle("show");
+  };

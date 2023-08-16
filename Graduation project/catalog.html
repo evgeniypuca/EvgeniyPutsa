@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="css/catalog.css">
         <title>Guitar Lavka</title>
     </head>
     <body>
         <div class="wrapper">
-            <a id="popup-fix" class="popup-fix"></a>
             <header class="header">
                 <div class="header-top">
                     <div class="header-top__left ">
@@ -43,7 +43,7 @@
                     <div class="header-top__right">
                         <img src="img/page-1/iconsfont/phone.png" alt="phone">
                         <div class="header-top__number"> 8 (800) 100 26 80
-                           <span>ЕЖЕДНЕВНО 10:00-20:00</span> </div>
+                            <span>ЕЖЕДНЕВНО 10:00-20:00</span> </div>
                     </div>
                 </div>
                 <div class="header-bottom">
@@ -53,13 +53,16 @@
                                 alt="homepage"></a>
                         <nav class="header-bottom__menu">
                             <ul>
-                                <li class="header-bottom__link"><a href="catalog.html">КАТАЛОГ</a></li>
-                                <li class="header-bottom__link"><a href="service.html">УСЛУГИ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="catalog.html">КАТАЛОГ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="service.html">УСЛУГИ</a></li>
                                 <li class="header-bottom__link"><a href>О НАС</a></li>
                                 <li class="header-bottom__link"><a href>ДОСТАВКА</a></li>
                                 <li class="header-bottom__link"><a href>ОТЗЫВЫ</a></li>
                                 <li class="header-bottom__link"><a href>ОБУЧЕНИЕ</a></li>
-                                <li class="header-bottom__link"><a href="contacts.html">КОНТАКТЫ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="contacts.html">КОНТАКТЫ</a></li>
                                 <li class="header-bottom__link"><a href>ОПТ</a></li>
                             </ul>
                         </nav>
@@ -74,338 +77,74 @@
                                     src="img/page-1/iconsfont/basket.svg"
                                     alt="basket"></a>
                         </div>
+
                     </div>
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </header>
-            <main class="main">
-                <section class="banner">
-                    <div class="container">
-                        <div class="slider1">
-                            <div class="slider1__item">
-                                <div class="slider1__info">
-                                    <h3 class="slider1__title">Takamine <br><span>гитара</span></h3>
-
-                                    <p class="slider1__text">винтажная 12
-                                        струнная
-                                        GJ72CE - 12BSB</p>
-                                </div>
-                                <img src="img/page-1/section-1/banner/1.jpg" alt>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__row">
+                        <div class="catalog__left">
+                            <div class="catalog__filter-titles">
+                                <span class="catalog__title ">Каталог</span>
+                                <span class="catalog__title"> Фильтры </span>
                             </div>
-                            <div class="slider1__item ">
-                                <div class="slider1__info">
-                                    <h3 class="slider1__title">Видео звонок в
-                                        магазин</h3>
-
-                                    <p class="slider1__text">Эта фунция помогает
-                                        увидеть
-                                        и услышать инструмент в реальном
-                                        времени,
-                                        что заметно упрощает выбор</p>
-                                </div>
-                                <img src="img/page-1/section-1/banner/2.jpg" alt>
-                            </div>
-                            <div class="slider1__item">
-                                <div class="slider1__info">
-                                    <h3 class="slider1__title">Отстройка каждого
-                                        инструмента</h3>
-
-                                    <p class="slider1__text">Наши мастера
-                                        отстраивают каждый инструмент перед
-                                        отправкой</p>
-                                </div>
-                                <img src="img/page-1/section-1/banner/3.jpg" alt>
-                            </div>
-                            <div class="slider1__item">
-                                <div class="slider1__info">
-                                    <h3 class="slider1__title"><span>Акустическая
-                                            гитара</span> <br> Kepma G1</h3>
-
-                                    <p class="slider1__text">Инструмент из
-                                        премиальной линейки G1</p>
-                                </div>
-                                <img src="img/page-1/section-1/banner/4.jpg" alt>
+                            <div class="catalog__filter">
+                                <ul class="catalog__filter-list">
+                                    <li>
+                                        <a onclick="dropList(1)">ГИТАРЫ</a>
+                                        <ul id="Drop1"
+                                            class="catalog__filter-list-drop ">
+                                            <li><a href>Акустические</a></li>
+                                            <li><a href>Электроакустические
+                                                    гитары</a></li>
+                                            <li><a href>Трансакустические гитары</a></li>
+                                            <li><a href>Классические гитары</a></li>
+                                            <li><a href>Электрогитары</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a onclick="dropList(2)">УКУЛЕЛЕ</a>
+                                        <ul id="Drop2"
+                                            class="catalog__filter-list-drop ">
+                                            <li><a href>Тенор</a></li>
+                                            <li><a href>Сопрано</a></li>
+                                            <li><a href>Концерт</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href>АКСЕСУАРЫ</a></li>
+                                    <li><a href>СТРУНЫ</a></li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="product">
-                    <div class="container">
-                        <div class="product__grid ">
-                                <div class="product__item1 product__item wow animate__fadeInLeft  animate__animated">
-                                    <img src="img/page-1/section-2/mediator.svg"
-                                        alt="guitar">
-                                    <p>гитары</p>
+                        <div class="catalog__right">
+                            <div class="catalog__head">
+                                <div class="catalog__info">
+                                    <span>155 товаров</span>
                                 </div>
-                                <div class="product__item2 product__item wow animate__fadeInLeft  animate__animated">
-                                    <img src="img/page-1/section-2/mediator.svg"
-                                        alt="accessories">
-                                    <p>укулеле</p>
+                                <div class="catalog__info">
+                                    <input id="nal" type="checkbox">
+                                    <label for="nal"> В наличии </label>
                                 </div>
-                                <div class="product__item3 product__item wow animate__fadeInRight  animate__animated">
-                                    <img src="img/page-1/section-2/mediator.svg"
-                                        alt="string">
-                                    <p>аксесуары</p>
+                                <div class="catalog__info">
+                                    <span>Сортировка </span>
+                                    <span>По умолчанию ...</span>
                                 </div>
-                                <div class="product__item4 product__item wow animate__fadeInRight  animate__animated">
-                                    <img src="img/page-1/section-2/mediator.svg"
-                                        alt="ukulele">
-                                    <p>струны</p>
-                                </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="brands">
-                    <div class="container">
-                        <div class="brands__items wow animate__fadeInRight  animate__animated">
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/1.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/2.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/3.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/4.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/5.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/6.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/7.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/8.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/9.png"
-                                    alt="brand"></a>
-                            <a class="brands__item" href="#"><img
-                                    src="img/page-1/section-3/brands/10.png"
-                                    alt="brand"></a>
-                        </div>
-                    </div>
-                </section>
-                <section class="goods">
-                    <div class="container">
-                        <div class="goods__body ">
-                            <h2 class="goods__title title">
-                                Популярные товары
-                            </h2>
-                            <div class="slider2 ">
-                                <div class="slider2__item good-item wow  animate__fadeInLeft animate__animated" data-wow-duration="1s" data-wow-delay="1.25s">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item wow  animate__fadeInLeft animate__animated" data-wow-duration="1s" data-wow-delay="1s">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item wow  animate__fadeInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.75s">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item wow  animate__fadeInLeft animate__animated" data-wow-duration="1s" data-wow-delay="0.5s">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="catalog__info">
+                                    <span>Показывать по </span><span>12</span>
                                 </div>
 
-                                <div class="slider2__item good-item">
-                                    <img src="img/page-1/section-4/product.jpg"
-                                        alt="good"><div
-                                        class="good-item__description">
-                                        <p class="good-item__name">Укулеле</p>
-                                        <h4 class="good-item__model">Enya
-                                            EUC-MAD</h4>
-                                        <div class="good-item__info">
-                                            <div class="good-items__cost">
-                                                <p class="good-item__cost-sale">₽24
-                                                    890</p>
-                                                <p class="good-item__cost">₽24
-                                                    890</p>
-                                            </div>
-                                            <div class="good-item__reviews">
-                                                <img
-                                                    src="img/page-1/section-4/rating.png"
-                                                    alt="rating">
-                                                <p>7 отзывов</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider2__item good-item">
+                            </div>
+                            <div class="catalog__galery " data-wow-duration="1.5s" data-wow-delay="0.5s">
+
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
                                     <img src="img/page-1/section-4/product.jpg"
                                         alt="good">
                                     <div class="good-item__description">
@@ -428,7 +167,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slider2__item good-item">
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
                                     <img src="img/page-1/section-4/product.jpg"
                                         alt="good">
                                     <div class="good-item__description">
@@ -451,7 +190,214 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slider2__item good-item">
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
+                                    <img src="img/page-1/section-4/product.jpg"
+                                        alt="good">
+                                    <div class="good-item__description">
+                                        <p class="good-item__name">Укулеле</p>
+                                        <h4 class="good-item__model">Enya
+                                            EUC-MAD</h4>
+                                        <div class="good-item__info">
+                                            <div class="good-items__cost">
+                                                <p class="good-item__cost-sale">₽24
+                                                    890</p>
+                                                <p class="good-item__cost">₽24
+                                                    890</p>
+                                            </div>
+                                            <div class="good-item__reviews">
+                                                <img
+                                                    src="img/page-1/section-4/rating.png"
+                                                    alt="rating">
+                                                <p>7 отзывов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__galery-item good-item wow  animate__fadeInUp animate__animated">
                                     <img src="img/page-1/section-4/product.jpg"
                                         alt="good">
                                     <div class="good-item__description">
@@ -475,49 +421,56 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="services">
-                    <div class="container">
-                        <div class="services__body">
-                            <h2 class="services__title title">Услуги</h2>
-                            <div class="services__type">
-                                <div class="services__type1 wow  animate__fadeInLeft animate__animated" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                                    <img
-                                        src="img/page-1/section-5/1.jpg"
-                                        alt="lerning"></div>
-                                <div class="services__type2 wow  animate__fadeInLeft animate__animated" data-wow-duration="0.75s" data-wow-delay="0.75s"><img
-                                        src="img/page-1/section-5/2.jpg"
-                                        alt="services"></div>
-                                <div class="services__type3 wow  animate__fadeInLeft animate__animated" data-wow-duration="1s" data-wow-delay="1s"><img
-                                        src="img/page-1/section-5/3.jpg"
-                                        alt="repare"></div>
+                            <div class="catalog__bottom">
+                                <div class="catalog__head-left">Первая</div>
+                                <span>&lt;</span><div
+                                    class="catalog__head-center">
+
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span>6</span>
+
+                                </div><span>&gt;</span>
+                                <div class="catalog__head-right">Последняя</div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="join">
-                    <div class="container">
-                        <form action="https://fe.it-academy.by/TestForm.php" class="join__form wow animate__fadeInRight  animate__animated " method="post" target="_blank">
-                            <p class="join__subtitle">ВСТУПАЙ В КЛУБ </p>
-                            <p class="join__title">GUITAR LAVKA</p>
-                            <p class="join__text">Полезные письма об
-                                инструментах и мероприятиях</p>
-                            <div class="join__input-body">
-                                <input type="email" class="join__input" name="email"
-                                    placeholder="     Ваш email ... ">
-                              <button class="join__button" type="submit" ><a href="#popup" ></a>
-                              </button>
+                </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <div class="video__row">
+                        <div class="video__youtube">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VBAC5GaoIT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video__description">
+                            <div class="video__title title">У НАС ШИРОКИЙ ВЫБОР
+                                ИНСТРУМЕНТОВ</div>
+                            <div class="video__text-body">
+                                <p class="video__text">Акустические
+                                </p>
+                                <p class="video__text">Трансакустические
+                                </p>
+                                <p class="video__text">Электроакустические</p>
+                                <p class="video__text">Классические</p>
+                                <p class="video__text">Тревел-гитары
+                                </p>
+                                <p class="video__text">Электрогитары</p>
                             </div>
-                            <div class="join__subtext">
-                                <a href="#">Я даю согласие на обработку своих
-                                    персональных данных</a>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                </section>
-            </main>
+                </div>
+            </section>
+            <section class="paragraph">
+                <div class="container">
+                    <p class="paragraph__text">Хорошая акустическая гитара – верный путь к правильному восприятию нот, а значит, она способна ускорить процесс обучения игры на музыкальном инструменте. Компания Guitar Lavka предлагает купить акустическую гитару с доставкой от ведущих производителей – Cort, 
+                        Enya и Sigma Guitars.
+                        Каждая гитара акустическая, цена на которую меньше 5000 рублей (дешевые модели), часто искажают качество звука при игре, что затрудняет обучение, однако это не означает, что невозможно найти недорогую гитару в интернет- магазине Guitar Lavka. В акаталоге имеется базовая «акустика» (бюджетные модели) стоимостью до 10000 рублей. Такие модели лишены дополнительного лоска, но самое главное – они не искажают звук и способны правильно научить слушать ритм, ноты и такты при обучении. </p>
+                </div>
+            </section>
             <footer class="footer">
                 <div class="container">
                     <div class="footer__row1">
@@ -526,7 +479,7 @@
                         </a>
                         <div class="footer__row1-service service">
                             <div class="service-type1">
-                                <h5>КАТАЛОГ</h5>
+                                <h5><a href="catalog.html">КАТАЛОГ</a></h5>
                                 <ul>
                                     <li><a href>Гитары</a></li>
                                     <li><a href>Укулеле</a></li>
@@ -535,22 +488,22 @@
                                 </ul>
                             </div>
                             <div class="service-type2">
-                                    <h5>СЕРВИС</h5>
-                                    <ul>
-                                        <li><a href>Оплата</a></li>
-                                        <li><a href>Гарантия</a></li>
-                                        <li><a href>Доставка</a></li>
+                                <h5><a href="service.html">СЕРВИС</a></h5>
+                                <ul>
+                                    <li><a href>Оплата</a></li>
+                                    <li><a href>Гарантия</a></li>
+                                    <li><a href>Доставка</a></li>
 
-                                    </ul>
+                                </ul>
                             </div>
                             <div class="service-type3">
-                                        <h5>УСЛУГИ</h5>
-                                        <ul>
-                                            <li><a href>Ремонт</a></li>
-                                            <li><a href>Онлайн подбор</a></li>
-                                            <li><a href>Обучение</a></li>
-                                            <li><a href>Комиссионка</a></li>
-                                        </ul>
+                                <h5><a href="service.html">УСЛУГИ</a></h5>
+                                <ul>
+                                    <li><a href>Ремонт</a></li>
+                                    <li><a href>Онлайн подбор</a></li>
+                                    <li><a href>Обучение</a></li>
+                                    <li><a href>Комиссионка</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -569,7 +522,7 @@
                             </div>
                             <div class="column1__info2">
                                 <p> ЕЖЕДНЕВНО 10:00 - 20:00</p>
-                                <p>nfo@guitarlavka.ru</p> 
+                                <p>nfo@guitarlavka.ru</p>
                             </div>
                             <div class="column1__info3">
                                 <a href="https://web.whatsapp.com/"
@@ -617,29 +570,18 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="footer__column2 column2 wow animate__fadeInUp animate__animated">
+                        <div
+                            class="footer__column2 column2 wow animate__fadeInUp animate__animated">
                             <div class="column2__img-phone ">
-                                <a href="https://www.instagram.com/" target="_blank"><img src="img/page-1/footer/phone.png"
+                                <a href="https://www.instagram.com/"
+                                    target="_blank"><img
+                                        src="img/page-1/footer/phone.png"
                                         alt="phone"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-        </div>
-        <div id="popup" class="popup">
-            <a href="#popup-fix" class="popup__area"></a>
-            <div class="popup__body ">
-                <div class="popup__content">
-                    <a class="popup__close" href="#popup-fix"></a>
-                    <div class="popup__title">GUITAR LAVKA</div>
-                    <div class="popup__text">
-                        <p>Спасибо за проявленный интерес. </p>
-                        <p>Теперь ты будешь в курсе всех событий и акций нашего магазина!</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
         <script src="js/wow.min.js"></script>
         <script>
