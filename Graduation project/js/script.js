@@ -53,6 +53,32 @@ $('.slider3').slick({
         {
             breakpoint:1100,
             settings:{
+                slidesToShow: 2,
+                slidesToScroll: 2 
+            },
+            
+        },
+        {
+            breakpoint:650,
+            settings:{
+                slidesToShow: 1,
+                slidesToScroll: 1 
+            },
+            
+        }
+    ]
+});   
+$('.slider4').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    dots:true,
+    arrows:false,
+    responsive:[
+        {
+            breakpoint:1100,
+            settings:{
                 slidesToShow: 3,
                 slidesToScroll: 3 
             },
@@ -75,11 +101,17 @@ $('.slider3').slick({
             
         }
     ]
-});   
-
+});  
 
 }); 
 
 function dropList(number) {
     document.getElementById("Drop" + number).classList.toggle("show");
   };
+
+  let menuBtn = document.querySelector('.menu-btn');
+  let menu = document.querySelector('.header-bottom__menu');
+  menuBtn.addEventListener('click', function(){
+      menuBtn.classList.toggle('active');
+      menu.classList.toggle('active');
+  });

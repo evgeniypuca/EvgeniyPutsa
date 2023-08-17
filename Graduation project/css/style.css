@@ -273,9 +273,70 @@ a {
 .header-bottom__icons {
   display: flex;
   flex-wrap: nowrap;
-}
-.header-bottom__icon {
+  align-items: center;
+  gap: 20px;
   margin-left: 20px;
+}
+.menu-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+@media (max-width: 750px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+.menu-btn span {
+  background-color: #FFF;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 7px);
+}
+
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 7px);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.header-bottom__menu.active {
+  flex: 0 1 608px;
+  display: block;
+}
+@media (max-width: 750px) {
+  .header-bottom__menu.active {
+    transform: translateX(0);
+  }
+}
+.header-bottom__menu.active ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .slick-track {

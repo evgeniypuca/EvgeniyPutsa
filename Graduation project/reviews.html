@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="css/service.css">
-        <title>Услуги</title>
+        <link rel="stylesheet" href="css/reviews.css">
+        <title>Отзывы</title>
     </head>
     <body>
         <div class="wrapper">
@@ -53,13 +53,17 @@
                                 alt="homepage"></a>
                         <nav class="header-bottom__menu">
                             <ul>
-                                <li class="header-bottom__link"><a href="catalog.html">КАТАЛОГ</a></li>
-                                <li class="header-bottom__link"><a href="#">УСЛУГИ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="catalog.html">КАТАЛОГ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="service.html">УСЛУГИ</a></li>
                                 <li class="header-bottom__link"><a href>О НАС</a></li>
                                 <li class="header-bottom__link"><a href>ДОСТАВКА</a></li>
-                                <li class="header-bottom__link"><a href="reviews.html">ОТЗЫВЫ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="reviews.html">ОТЗЫВЫ</a></li>
                                 <li class="header-bottom__link"><a href>ОБУЧЕНИЕ</a></li>
-                                <li class="header-bottom__link"><a href="contacts.html">КОНТАКТЫ</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="contacts.html">КОНТАКТЫ</a></li>
                                 <li class="header-bottom__link"><a href>ОПТ</a></li>
                             </ul>
                         </nav>
@@ -74,169 +78,107 @@
                                     src="img/page-1/iconsfont/basket.svg"
                                     alt="basket"></a>
                         </div>
-
                     </div>
                     <div class="container">
                         <ul class="breadcrumb">
                             <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">Текущее обслуживание</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
                         </ul>
                     </div>
-
                 </div>
             </header>
-            <main class="main">
-                <section class="service">
-                    <div class="container">
-                        <div class="service__rowtop">
-                            <div class="service__left">
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__head">
+                        <h2 class="reviews__title title">Отзывы</h2>
+                        <p>Отзывы на Яндекс.Картах - <span>&nbsp читать все
+                                отзывы</span></p>
+                    </div>
+                    <form class="reviews__form form">
+                        <div class="container-form">
+                            <div class="form__review">
+                                <div class="form__foto ava1"></div>
+                                <div class="form__item">
+                                    <p class="form__title">Станислав</p>
+                                    <p class="form__text">Отличный инструмент!
+                                        Соотношение звука и цены просто
+                                        восхитительное, действительно данная
+                                        гитара звучит на уровне более дорогих
+                                        инструментов,
+                                        очень удобная, качественно собрана,
+                                        удобный гриф, отлично держит строй,
+                                        очень стильно выглядит!
+                                    </p>
+                                    <p class="form__date">15 дней назад,
+                                        просмотрено</p>
+                                </div>
                             </div>
-                            <div class="service__right">
-                                <div class="service__novigation">
-                                    <button onclick="prev()"><img
-                                            src="img/service/prev.svg"
-                                            alt="prev"><span>назад</span></button>
-                                    <button onclick="next()"><span>вперёд</span><img
-                                            src="img/service/next.svg"
-                                            alt="prev"></button>
+                            <div class="form__review">
+                                <div class="form__foto ava2"></div>
+                                <div class="form__item">
+                                    <p class="form__title">Аркадий</p>
+                                    <p class="form__text">Отличный инструмент!
+                                        Соотношение звука и цены просто
+                                        восхитительное, действительно данная
+                                        гитара звучит на уровне более дорогих
+                                        инструментов,
+                                        очень удобная, качественно собрана,
+                                        удобный гриф, отлично держит строй,
+                                        очень стильно выглядит!
+                                    </p>
+                                    <p class="form__date">19 дней назад,
+                                        просмотрено</p>
                                 </div>
-                                <h2 class="service__title title">Текущее <br>
-                                    обслуживание</h2>
-                                <div class="service__description ">
-                                    Диагностика и консультация - БЕСПЛАТНО<br>
-                                    Замена струн с чисткой накладки и пропиткой
-                                    маслом - 500 <br>
-                                    Замена струн с чисткой накладки и пропиткой
-                                    маслом+полировка ладов - 1000<br>
-                                    Комплексная чистка
-                                    акустической/бас/электрогитары - 700<br>
-                                    Отстройка акустической/бас/электрогитары без
-                                    флойд роуз -2000<br>
-                                    Отстройка электрогитары с флойд роуз - 2500<br>
-                                    Срочная настройка** - 4000<br>
-                                    Полировка ладов с чисткой накладки пропитка
-                                    маслом - 1000<br>
-                                    Шлифовка ладов (с закаткой и полировкой) -
-                                    3500
+                            </div>
+                            <div class="form__body">
+                                <p class="form__add">Добавить отзыв
+                                </p>
+                                <input placeholder="        Ваше имя..."
+                                    type="text" class="form__name">
+                                <input placeholder="        Е-mail..."
+                                    type="text" class="form__email">
+                                <textarea placeholder="       Отзыв..." name id
+                                    cols="30" rows="10" class="form__area"></textarea>
+                                <p class="form__grade">Оценка</p>
+                                <div class="form__agree">
+                                    <button type="submit">ОТПРАВИТЬ</button>
+                                    <input id="agree" type="checkbox">
+                                    <label for="agree">Я даю согласие на
+                                        обработку своих персональных данных
+                                    </label>
+
                                 </div>
-                                <div class="service__cost">от 300 ₽</div>
-                                <button class="service__button">записаться</button>
                             </div>
                         </div>
-                        <div class="service__description-none">
-                            Диагностика и консультация - БЕСПЛАТНО<br>
-                            Замена струн с чисткой накладки и пропиткой
-                            маслом - 500 <br>
-                            Замена струн с чисткой накладки и пропиткой
-                            маслом+полировка ладов - 1000<br>
-                            Комплексная чистка
-                            акустической/бас/электрогитары - 700<br>
-                            Отстройка акустической/бас/электрогитары без
-                            флойд роуз -2000<br>
-                            Отстройка электрогитары с флойд роуз - 2500<br>
-                            Срочная настройка** - 4000<br>
-                            Полировка ладов с чисткой накладки пропитка
-                            маслом - 1000<br>
-                            Шлифовка ладов (с закаткой и полировкой) -
-                            3500
+                    </form>
+                </div>
+            </section>
+            <section class="videoreviews">
+                <div class="container">
+                    <div class="videoreviews__title title">Видео отзывы</div>
+                    <div class="slider4">
+                        <div class="slider4__item ">
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <div class="service__rowbottom" id="readmoretext">
-                            <p class="service__text">Никогда не бойтесь принести
-                                инструмент, ведь как минимум диагностика
-                                и осмотр в нашей мастерской всегда бесплатны.
-                                Большинство инструментов нуждается в банальном
-                                техническом обслуживании,
-                                чистке, отстройке и полировке.
-                                Если про чистку и полировку все ясно,
-                                то по отстройке стоит пояснить немного
-                                подробнее.
-                            </p>
-                            <button onclick="readmore()">>читать ещё...</button>
+                        <div class="slider4__item ">
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider4__item ">
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider4__item ">
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider4__item ">
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="slider4__item ">
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
-                </section>
-                <section class="service-type">
-                    <div class="container-small">
-                        <div class="service-type__galery">
-                            <div class="service-type__item">
-                                <img src="img/service/1.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__name">Реставрация</p>
-                                    <p class="service-type__cost">₽1500</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/2.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__subname">ремонт</p>
-                                    <p class="service-type__name">Грифа</p>
-                                    <p class="service-type__cost">₽500</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/3.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__subname">ремонт</p>
-                                    <p class="service-type__name">Электрики</p>
-                                    <p class="service-type__cost">₽300</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/2.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__name">Покраска</p>
-                                    <p class="service-type__cost">₽1000</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/1.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__name">Реставрация</p>
-                                    <p class="service-type__cost">₽1500</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/2.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__subname">ремонт</p>
-                                    <p class="service-type__name">Грифа</p>
-                                    <p class="service-type__cost">₽500</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/3.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__subname">ремонт</p>
-                                    <p class="service-type__name">Электрики</p>
-                                    <p class="service-type__cost">₽300</p>
-                                </div>
-                            </div>
-                            <div class="service-type__item">
-                                <img src="img/service/2.jpg" alt="also">
-                                <div class="service-type__description">
-                                    <p class="service-type__name">Покраска</p>
-                                    <p class="service-type__cost">₽1000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </section>
 
-                </section>
-                <section class="paragraph">
-                    <div class="container-small">
-                        <div class="paragraph__text">
-                            <p>* - цены указаны без учета материалов и
-                                комплектующих;</p>
-                            <p> ** - срочная отстройка инструмента – 3 часа;</p>
-                            <p> *** - сроки ремонта указываются мастером в
-                                зависимости от конкретного случая;</p>
-                            <p> **** - срочный ремонт (покраска, склейка,
-                                перепайка)
-                                – коэффициент X2.</p>
-
-                        </div></div>
-                </section>
-            </main>
             <footer class="footer">
                 <div class="container">
                     <div class="footer__row1">
@@ -355,8 +297,7 @@
         </script>
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
         <script src="js/slick.min.js"></script>
-        <script>
-        </script>
+        <script src="js/script.js"></script>
 
     </body>
 </html>

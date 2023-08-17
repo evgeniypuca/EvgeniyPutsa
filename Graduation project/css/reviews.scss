@@ -33,7 +33,16 @@ $backgrond: #131218;
 
 
 
-//------Анимации----------------------------------------------------------------------------
+//------Миксин----------------------------------------------------------------------------
+@mixin textGrey14 {
+    color: $grey;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
 
 
 //------Общие стили----------------------------------------------------------------------------
@@ -282,262 +291,311 @@ ul.breadcrumb li a:hover {
 }
 
 
-.main {
-    background: url(../img/service/orangeback.png) 0 center no-repeat;
-}
+//------Section1 reviews ----------------------------------------------------------------------------
 
+.reviews {
+    z-index: 10;
+    &__head {
+        padding: 0 20px;
 
-//------Section1-service----------------------------------------------------------------------------
-
-.service {
-    padding: 0 20px;
-
-
-    &__rowtop {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr ;
-        gap: 27px;
-        @media (max-width:800px) {
-            gap: 17px;
-        }
-    }
-
-    &__left {
-        background:url(../img/service/left.jpg) 0 0 no-repeat;
-        background-size:cover;
-    }
-
-
-    &__right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__novigation {
-        display: flex;
-        gap: 18px;
-        @media (max-width:800px) {
-            display: none;
-        }
-        button {
-            background: none;
+        p {
             display: flex;
-            align-items: center;
-
-            span {
-                color: $grey;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 35px;
-            }
-        }
-    }
-
-    &__title {
-        display: block;
-        margin: 15px 0;
-        @media (max-width:800px) {
-            margin: 0;
-            flex-grow: 1;
-        }
-        &::after {
-            display: none;
-        }
-    }
-
-    &__description {
-        color: $grey;
-        font-size: 14px;
-        line-height: 25px;
-        @media (max-width:950px) {
-            font-size: 10px;
-            line-height: 20px;
-        }
-        @media (max-width:800px) {
-            display: none;
-        }
-        
-    }
-
-    &__description-none{
-        color: $grey;
-        font-size: 14px;
-        line-height: 25px;
-        display: none;
-        @media (max-width:800px) {
-            display: block;
-            margin-top: 17px;
-        }
-    }
-    &__cost {
-        margin-top: 12px;
-        color: $orange;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 35px;
-    }
-
-    &__button {
-        width: 161px;
-        width: 161px;
-        height: 40px;
-        border-radius: 5px;
-        border: 1px solid rgba(255, 255, 255, 0.60);
-        background: #131218;
-        color: rgba(255, 255, 255, 0.60);
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    &__rowbottom {
-        margin-top: 70px;
-        padding-right: 20%;
-
-        button {
-            color: $grey;
+            justify-content: center;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
-            background: none;
+            line-height: 35px;
+
+            span {
+                color: $orange;
+            }
+            
+		@media (max-width:950px) {
+            font-size: 16px;
+		}
+
+		@media (max-width:650px) {
+font-size: 12px;
+		}
         }
+    }
+
+
+    &__form {
+        padding: 0 20px;
+        margin: 19px 20px 0 20px;
+    }
+}
+
+.container-form {
+    max-width: 815px;
+    margin: 0 auto;
+}
+
+.form {
+    box-shadow: 0px 4px 15px 1px rgba(255, 255, 255, 0.24);
+
+    background: #131218;
+    border-radius: 30px;
+    padding: 45px 40px 36px 40px;
+
+    &__review {
+        display: flex;
+        gap: 9px;
+
+    }
+
+    &__foto {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .ava1 {
+        background: url(../img/review/avatar.jpg) center center no-repeat;
+
+    }
+
+    .ava2 {
+        background: url(../img/review/avatar2.jpg) center center no-repeat;
+
+    }
+
+    &__item {}
+
+    &__title {
+        margin-left: 13px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     &__text {
+        margin: 5px 0 5px 0;
+        @include textGrey14;
+        padding: 16px 13px 16px 13px;
+        border-radius: 15px;
+        background: #2A292E;
+
+    }
+
+    &__date {
+        @include textGrey14;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.13);
+        margin-bottom: 10px;
+        margin-left: 13px;
+    }
+
+    &__body {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        & * {
+            background-color: $backgrond;
+        }
+    }
+
+    &__add {
+        color: $orange;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 30px;
-    }
-}
+        line-height: 35px;
 
-
-
-//------Section2  service-type----------------------------------------------------------------------------
-
-.service-type {
-    padding: 0 20px;
-    margin-top: 68px;
-
-    &__galery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px 20px;
-
-        @media (max-width:950px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-        }
-
-        @media (max-width:650px) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-    }
-
-
-    &__item {
-        background: #3B3A40;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        transition: 0.3s ease;
-        overflow: hidden;
-        &:hover img{
-            transform: scale(1.1);
-            
-        }
-        &:nth-child(7) {
-            @media (max-width:950px) {
-                display: none;
-            }
-        }
-
-        &:nth-child(8) {
-            @media (max-width:950px) {
-                display: none;
-            }
-        }
-
-        &:hover {
-            box-shadow: 0px 4px 20px 0px rgba(234, 131, 5, 0.60);
-        }
-
-        img {
-            flex-shrink: 1;
-            width: 100%;
-            border-bottom-right-radius: 40px;
-            transition: 0.5s ease;
-
-        }
-    }
-
-    &__description {
-        background-color: #3B3A40;
-        padding: 15px 13px 5px 13px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
     }
 
     &__name {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 35px;
+        height: 60px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px 1px rgba(255, 255, 255, 0.24);
+        font-style: italic;
+        color: #fff;
+        padding: 5px 20px;
 
-        & {
-            @media (max-width:650px) {
-                font-size: 18px;
-            }
+        &:focus {
+            box-shadow: 0px 4px 15px 1px $orange;
         }
     }
 
-    &__cost {
+    &__email {
+        height: 60px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px 1px rgba(255, 255, 255, 0.24);
+        font-style: italic;
+        color: #fff;
+        padding: 5px 20px;
+
+        &:focus {
+            box-shadow: 0px 4px 15px 1px $orange;
+        }
+    }
+
+
+    &__area {
+        height: 180px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px 1px rgba(255, 255, 255, 0.24);
+        font-style: italic;
+        color: #fff;
+        padding: 5px 20px;
+
+        &:focus {
+            box-shadow: 0px 4px 15px 1px $orange;
+        }
+    }
+
+    &__grade {
+        @include textGrey14;
+        font-style: italic;
+    }
+
+    button {
+        color: #FFF;
+        width: 161px;
         font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 35px;
-        & {
+        border-radius: 5px;
+        background: rgba(234, 131, 5, 0.60);
+        padding: 13px 27px 13px 27px;
+        @media (max-width:950px) {
+            font-size: 16px;
+		}
+
+		@media (max-width:650px) {
+font-size: 12px;
+width: 100%;
+		}
+    }
+
+
+    &__agree {
+        display: flex;
+        align-items: center;
+
+        label {
+            @include textGrey14;
+            font-style: italic;
+            padding: 0 10px 0 30px;
+            position: relative;
+            margin-right: 40px;
             @media (max-width:650px) {
-                font-size: 10px;
-            }
+                display: none;
+                        }
         }
-        
+
+        input {
+            visibility: hidden;
+            @media (max-width:650px) {
+                display: none;
+                        }
+        }
+
+        input:checked+label::after {
+            border: 1px solid $orange;
+            box-shadow: inset 0px 0px 7px 4px rgba(234, 131, 5, 0.60);
+
+        }
+
+        label::after {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            right: -35px;
+            top: -2px;
+            border-radius: 5px;
+            border: 1px solid $orange;
+            background: #3B3A40;
+            box-shadow: 0px 4px 20px 0px rgba(234, 131, 5, 0.60);
+
+        }
+
+
+
+
     }
 
-    &__subname {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 35px;
+
+}
+
+
+// ___________________________________________________________________
+
+
+
+.slider4 {
+    margin-top: 20px;
+	min-width: 0;
+	position: relative;
+
+
+	.slick-track {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.slick-list {
+		overflow: hidden;
+	}
+
+
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 22px;
+	}
+
+	.slick-dots li {
+		list-style: none;
+		margin: 0 10px;
+	}
+
+	.slick-dots button {
+		font-size: 0;
+		height: 5px;
+		width: 50px;
+		background-color: $grey;
+		border: $grey;
+	}
+
+	.slick-dots li.slick-active button {
+		background-color: #FFF;
+		border: #FFF 1px solid;
+	}
+
+    .slick-arrow{
+        display: none;
+    }
+
+}
+
+
+//------Section 2 Video ----------------------------------------------------------------------------
+
+.videoreviews {
+    background: url(../img/service/orangeback.png) 0 center no-repeat;
+    margin: -204px 0 130px 0;
+    padding: 300px 0 100px 0;
+
+    &__title {
     }
 }
 
 
-//------Section3  paragraph----------------------------------------------------------------------------
-.paragraph {
-    padding: 0 20px;
 
-}
 
-.paragraph__text {
-    margin: 34px 0 80px 0;
-    color: #3B3A40;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    @media (max-width:950px) {
-        margin-top: 30px;
-    }
-    @media (max-width:650px) {
-        margin-top: 15px;
-    }
-}
+
+
+
+
+
+
 
 //------Footer ----------------------------------------------------------------------------
 
