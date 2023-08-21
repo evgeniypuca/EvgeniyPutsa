@@ -234,10 +234,16 @@ a {
 }
 
 .header-bottom {
+  position: relative;
   padding: 0 20px;
 }
 .header-bottom__logo {
   transform: translateX(-11px);
+}
+@media (max-width: 750px) {
+  .header-bottom__logo img {
+    width: 100px;
+  }
 }
 @media (max-width: 950px) {
   .header-bottom__logo a {
@@ -246,11 +252,6 @@ a {
 }
 .header-bottom__menu {
   flex: 0 1 608px;
-}
-@media (max-width: 750px) {
-  .header-bottom__menu {
-    display: none;
-  }
 }
 .header-bottom__menu ul {
   display: flex;
@@ -324,19 +325,39 @@ a {
   transform: translate(-50%, 0%) rotate(-45deg);
 }
 
+@media (max-width: 750px) {
+  .header-bottom__menu {
+    position: absolute;
+    top: -100%;
+    transition: 0.3s;
+  }
+}
+
 .header-bottom__menu.active {
   flex: 0 1 608px;
   display: block;
 }
 @media (max-width: 750px) {
   .header-bottom__menu.active {
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0 20px 15px;
     transform: translateX(0);
+    background-color: #131218;
+    transition: 0.5s;
   }
-}
-.header-bottom__menu.active ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .header-bottom__menu.active ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .header-bottom__menu.active ul a {
+    font-size: 18px;
+  }
 }
 
 .slick-track {

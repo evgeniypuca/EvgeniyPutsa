@@ -278,11 +278,18 @@ $backgrond: #131218;
 }
 
 .header-bottom {
+	position: relative;
 	padding: 0 20px;
-
+	
 	&__logo {
 		transform: translateX(-11px);
+		img {
+			
+			@media (max-width:750px) {
+				width: 100px;
+			}
 
+		}
 		& a {
 			@media (max-width:950px) {
 				width: 80%;
@@ -294,9 +301,6 @@ $backgrond: #131218;
 	&__menu {
 		flex: 0 1 608px;
 
-		@media (max-width:750px) {
-			display: none;
-		}
 
 		ul {
 			display: flex;
@@ -377,19 +381,41 @@ $backgrond: #131218;
 	transform: translate(-50%, 0%) rotate(-45deg); 
   }
 
+  .header-bottom__menu {
+	@media (max-width:750px){
+		position: absolute;
+		top: -100%;
+		transition: 0.3s;
+	}
+  }
+	
+
   .header-bottom__menu.active{
 	flex: 0 1 608px;
 	display: block;
 	@media (max-width:750px) {
+		position: absolute;
+		z-index: 100;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		padding: 20px 0 20px 15px;
 		transform: translateX(0);
-	}
-
-	ul {
+		background-color:$backgrond; 
+		transition: 0.5s;
+		ul {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		gap: 10px;
+		a{
+			font-size: 18px;
+	}
+		}
 
 	}
+
+
 }
 
 
