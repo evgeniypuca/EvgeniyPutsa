@@ -117,11 +117,12 @@ ul.breadcrumb li+li:before {
 
 ul.breadcrumb li a {
     text-decoration: none;
+    transition: 0.5s ease;
 }
 
 
 ul.breadcrumb li a:hover {
-    text-decoration: underline;
+    color:$orange;
 }
 
 //------HEADER----------------------------------------------------------------------------
@@ -230,6 +231,7 @@ i {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    overflow: hidden;
 }
 
 .header-bottom {

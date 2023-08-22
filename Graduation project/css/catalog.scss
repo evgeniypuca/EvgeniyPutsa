@@ -124,18 +124,25 @@ ul.breadcrumb li+li:before {
 	content: "/\00a0";
 }
 
-
 ul.breadcrumb li a {
-	text-decoration: none;
+    text-decoration: none;
+    transition: 0.5s ease;
 }
 
 
 ul.breadcrumb li a:hover {
-	text-decoration: underline;
+    color:$orange;
 }
 
 //------HEADER----------------------------------------------------------------------------
+i {
+	transition: 0.3s ease;
+	color: $grey;
 
+	&:hover {
+		color: #FFF;
+	}
+}
 
 .header {}
 
