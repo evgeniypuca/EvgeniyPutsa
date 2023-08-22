@@ -505,6 +505,9 @@ text-align: center;
         flex-direction: column;
         justify-content: center;
         padding:  0 50px;
+        @media(max-width:650px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
@@ -533,9 +536,7 @@ line-height: 25px;
     &__column2 {
         border-left: 1px solid #fff;
         padding: 0 50px;
-        @media(max-width:650px) {
-            border-left: none;
-        }
+ 
     }
 
     &__column2-body {
@@ -591,14 +592,24 @@ line-height: 25px;
     &__row {
         display: flex;
         gap: 50px;
+        @media(max-width:950px) {
+            gap: 20px;
+        }
+        @media(max-width:650px) {
+            flex-direction: column;
+        }
         
     }
 
     &__contacts {
                 display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
+        gap: 20px;
         flex: 1 0 200px;
+        @media(max-width:650px) {
+            flex: 1 0 auto;
+        }
     }
 
     &__contact {}

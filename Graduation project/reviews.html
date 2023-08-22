@@ -53,31 +53,37 @@
                                 <li class="header-bottom__link"><a
                                         href="service.html">УСЛУГИ</a></li>
                                 <li class="header-bottom__link"><a href="about-us.html">О НАС</a></li>
-                                <li class="header-bottom__link"><a href>ДОСТАВКА</a></li>
+                                <li class="header-bottom__link"><a>ДОСТАВКА</a></li>
                                 <li class="header-bottom__link"><a
                                         href="reviews.html">ОТЗЫВЫ</a></li>
-                                <li class="header-bottom__link"><a href>ОБУЧЕНИЕ</a></li>
+                                <li class="header-bottom__link"><a>ОБУЧЕНИЕ</a></li>
                                 <li class="header-bottom__link"><a
                                         href="contacts.html">КОНТАКТЫ</a></li>
-                                <li class="header-bottom__link"><a href>ОПТ</a></li>
+                                <li class="header-bottom__link"><a>ОПТ</a></li>
                             </ul>
                         </nav>
                         <div class="header-bottom__icons">
-                            <a href class="header-bottom__icon"><img
+                            <a class="header-bottom__icon"><img
                                     src="img/page-1/iconsfont/search.svg"
                                     alt="search"></a>
-                            <a href class="header-bottom__icon"><img
+                            <a class="header-bottom__icon"><img
                                     src="img/page-1/iconsfont/heart.svg"
                                     alt="heart"></a>
-                            <a href class="header-bottom__icon"><img
+                            <a class="header-bottom__icon"><img
                                     src="img/page-1/iconsfont/basket.svg"
                                     alt="basket"></a>
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
+
                     </div>
                     <div class="container">
                         <ul class="breadcrumb">
                             <li><a href="index.html">Главная</a></li>
-                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="about-us.html">Отзывы</a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,7 +95,7 @@
                         <p>Отзывы на Яндекс.Картах - <span>&nbsp читать все
                                 отзывы</span></p>
                     </div>
-                    <form class="reviews__form form">
+                    <form class="reviews__form form" method="post" action="https://fe.it-academy.by/TestForm.php">
                         <div class="container-form">
                             <div class="form__review">
                                 <div class="form__foto ava1"></div>
@@ -129,15 +135,14 @@
                                 <p class="form__add">Добавить отзыв
                                 </p>
                                 <input placeholder="        Ваше имя..."
-                                    type="text" class="form__name">
+                                    type="text" class="form__name" name="name">
                                 <input placeholder="        Е-mail..."
-                                    type="text" class="form__email">
-                                <textarea placeholder="       Отзыв..." name id
-                                    cols="30" rows="10" class="form__area"></textarea>
+                                    type="text" class="form__email" name="email">
+                                <textarea placeholder="       Отзыв..."  cols="30" rows="10" class="form__area" name="coment"></textarea>
                                 <p class="form__grade">Оценка</p>
                                 <div class="form__agree">
                                     <button type="submit">ОТПРАВИТЬ</button>
-                                    <input id="agree" type="checkbox">
+                                    <input id="agree" type="checkbox" name="agree">
                                     <label for="agree">Я даю согласие на
                                         обработку своих персональных данных
                                     </label>
@@ -153,23 +158,14 @@
                     <div class="videoreviews__title title">Видео отзывы</div>
                     <div class="slider4">
                         <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
                         <div class="slider4__item ">
                             <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="slider4__item ">
                             <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -182,7 +178,9 @@
                         </a>
                         <div class="footer__row1-service service">
                             <div class="service-type1">
-                                <h5>КАТАЛОГ</h5>
+                                <a href="catalog.html">
+                                    <h5>КАТАЛОГ</h5>
+                                </a>
                                 <ul>
                                     <li><a href="catalog.html">Гитары</a></li>
                                     <li><a href="catalog.html">Укулеле</a></li>
@@ -191,7 +189,9 @@
                                 </ul>
                             </div>
                             <div class="service-type2">
-                                <h5>СЕРВИС</h5>
+                                <a href="service.html">
+                                    <h5>СЕРВИС</h5>
+                                </a>
                                 <ul>
                                     <li><a>Оплата</a></li>
                                     <li><a>Гарантия</a></li>
@@ -200,7 +200,9 @@
                                 </ul>
                             </div>
                             <div class="service-type3">
-                                <h5>УСЛУГИ</h5>
+                                <a href="service.html">
+                                    <h5>УСЛУГИ</h5>
+                                </a>
                                 <ul>
                                     <li><a href="service.html">Ремонт</a></li>
                                     <li><a href="catalog.html">Онлайн подбор</a></li>

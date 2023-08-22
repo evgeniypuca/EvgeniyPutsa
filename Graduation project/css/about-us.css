@@ -417,6 +417,11 @@ i:hover {
   justify-content: center;
   padding: 0 50px;
 }
+@media (max-width: 650px) {
+  .info__column1 {
+    margin-bottom: 20px;
+  }
+}
 .info__title {
   align-items: start;
 }
@@ -440,11 +445,6 @@ i:hover {
 .info__column2 {
   border-left: 1px solid #fff;
   padding: 0 50px;
-}
-@media (max-width: 650px) {
-  .info__column2 {
-    border-left: none;
-  }
 }
 .info__column2-body {
   margin-bottom: 20px;
@@ -487,11 +487,27 @@ i:hover {
   display: flex;
   gap: 50px;
 }
+@media (max-width: 950px) {
+  .howtoget__row {
+    gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .howtoget__row {
+    flex-direction: column;
+  }
+}
 .howtoget__contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 20px;
   flex: 1 0 200px;
+}
+@media (max-width: 650px) {
+  .howtoget__contacts {
+    flex: 1 0 auto;
+  }
 }
 .howtoget__contact-title {
   margin-bottom: 10px;

@@ -77,7 +77,7 @@ $('.slider4').slick({
     arrows:false,
     responsive:[
         {
-            breakpoint:1100,
+            breakpoint:1200,
             settings:{
                 slidesToShow: 3,
                 slidesToScroll: 3 
@@ -85,7 +85,7 @@ $('.slider4').slick({
             
         },
         {
-            breakpoint:850,
+            breakpoint:950,
             settings:{
                 slidesToShow: 2,
                 slidesToScroll: 2 
