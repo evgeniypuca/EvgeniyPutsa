@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"
-        href="font-awesome-4.7.0/css/font-awesome.min.css">
+            href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="css/reviews.css">
-        <title>Отзывы</title>
+        <link rel="stylesheet" href="css/delivery.css">
+        <title>Доставка</title>
     </head>
     <body>
         <div class="wrapper">
@@ -52,7 +52,8 @@
                                         href="catalog.html">КАТАЛОГ</a></li>
                                 <li class="header-bottom__link"><a
                                         href="service.html">УСЛУГИ</a></li>
-                                <li class="header-bottom__link"><a href="about-us.html">О НАС</a></li>
+                                <li class="header-bottom__link"><a
+                                        href="about-us.html">О НАС</a></li>
                                 <li class="header-bottom__link"><a href="delivery.html">ДОСТАВКА</a></li>
                                 <li class="header-bottom__link"><a
                                         href="reviews.html">ОТЗЫВЫ</a></li>
@@ -83,93 +84,140 @@
                     <div class="container">
                         <ul class="breadcrumb">
                             <li><a href="index.html">Главная</a></li>
-                            <li><a href="about-us.html">Отзывы</a></li>
+                            <li><a href="#">Доставка</a></li>
                         </ul>
                     </div>
                 </div>
             </header>
-            <section class="reviews">
-                <div class="container">
-                    <div class="reviews__head">
-                        <h2 class="reviews__title title">Отзывы</h2>
-                        <p>Отзывы на Яндекс.Картах - <span>&nbsp читать все
-                                отзывы</span></p>
+            <section class="delivery">  
+                <div class="container-small">
+                    <h2 class="delivery__title title">Доставка</h2>
+                    <div class="delivery__table">
+                        <div class="delivery__item">
+                            <div class="delivery__item-title">САМОВЫВОЗ</div>
+                            <div class="delivery__item-row">
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СРОК</p>
+                                    <p class="delivery__item-column-text">Мы работаем ежедневно
+                                        с 10:00 до 20:00</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СТОИМОСТЬ</p>
+                                    <p class="delivery__item-column-text">Бесплатно</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">ОПИСАНИЕ</p>
+                                    <p class="delivery__item-column-text">Забрать в магазине по адресу 
+                                        ТЦ Вертикаль, 
+                                        Московское шоссе 17</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__item">
+                            <div class="delivery__item-title">BOXBERRY</div>
+                            <div class="delivery__item-row">
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СРОК</p>
+                                    <p class="delivery__item-column-text">От 3 дней</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СТОИМОСТЬ</p>
+                                    <p class="delivery__item-column-text">от 250 руб</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">ОПИСАНИЕ</p>
+                                    <p class="delivery__item-column-text">Доставка до пункта выдачи BOXBERRY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__item">
+                            <div class="delivery__item-title">СДЕК</div>
+                            <div class="delivery__item-row">
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СРОК</p>
+                                    <p class="delivery__item-column-text">От 3 дней</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СТОИМОСТЬ</p>
+                                    <p class="delivery__item-column-text">от 300 руб</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">ОПИСАНИЕ</p>
+                                    <p class="delivery__item-column-text">Доставка пункта выдачи или указанного до адреса с возможностью оплаты при получении.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__item">
+                            <div class="delivery__item-title">ПОЧТА РОССИИ</div>
+                            <div class="delivery__item-row">
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СРОК</p>
+                                    <p class="delivery__item-column-text">От 3 дней </p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">СТОИМОСТЬ</p>
+                                    <p class="delivery__item-column-text">От 200 рублей</p>
+                                </div>
+                                <div class="delivery__item-column">
+                                    <p class="delivery__item-column-title">ОПИСАНИЕ</p>
+                                    <p class="delivery__item-column-text">Обыкновенная посылка. 
+                                        Наземная доставка по России с низким тарифом по весу</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <form class="reviews__form form" method="post" action="https://fe.it-academy.by/TestForm.php">
-                        <div class="container-form">
-                            <div class="form__review">
-                                <div class="form__foto ava1"></div>
-                                <div class="form__item">
-                                    <p class="form__title">Станислав</p>
-                                    <p class="form__text">Отличный инструмент!
-                                        Соотношение звука и цены просто
-                                        восхитительное, действительно данная
-                                        гитара звучит на уровне более дорогих
-                                        инструментов,
-                                        очень удобная, качественно собрана,
-                                        удобный гриф, отлично держит строй,
-                                        очень стильно выглядит!
-                                    </p>
-                                    <p class="form__date">15 дней назад,
-                                        просмотрено</p>
-                                </div>
-                            </div>
-                            <div class="form__review">
-                                <div class="form__foto ava2"></div>
-                                <div class="form__item">
-                                    <p class="form__title">Аркадий</p>
-                                    <p class="form__text">Отличный инструмент!
-                                        Соотношение звука и цены просто
-                                        восхитительное, действительно данная
-                                        гитара звучит на уровне более дорогих
-                                        инструментов,
-                                        очень удобная, качественно собрана,
-                                        удобный гриф, отлично держит строй,
-                                        очень стильно выглядит!
-                                    </p>
-                                    <p class="form__date">19 дней назад,
-                                        просмотрено</p>
-                                </div>
-                            </div>
-                            <div class="form__body">
-                                <p class="form__add">Добавить отзыв
+                </div>
+            </section>
+
+            <section class="video">
+                <div class="container-small">
+                    <div class="video__row">
+                        <div class="video__youtube">
+                            <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/VBAC5GaoIT4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video__description">
+                            <div class="video__title title">У НАС ШИРОКИЙ ВЫБОР
+                                ИНСТРУМЕНТОВ</div>
+                            <div class="video__text-body">
+                                <p class="video__text">Акустические
                                 </p>
-                                <input placeholder="        Ваше имя..."
-                                    type="text" class="form__name" name="name">
-                                <input placeholder="        Е-mail..."
-                                    type="text" class="form__email" name="email">
-                                <textarea placeholder="       Отзыв..."  cols="30" rows="10" class="form__area" name="coment"></textarea>
-                                <p class="form__grade">Оценка</p>
-                                <div class="form__agree">
-                                    <button type="submit">ОТПРАВИТЬ</button>
-                                    <input id="agree" type="checkbox" name="agree">
-                                    <label for="agree">Я даю согласие на
-                                        обработку своих персональных данных
-                                    </label>
-
-                                </div>
+                                <p class="video__text">Трансакустические
+                                </p>
+                                <p class="video__text">Электроакустические</p>
+                                <p class="video__text">Классические</p>
+                                <p class="video__text">Тревел-гитары
+                                </p>
+                                <p class="video__text">Электрогитары</p>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </section>
-            <section class="videoreviews">
-                <div class="container">
-                    <div class="videoreviews__title title">Видео отзывы</div>
-                    <div class="slider4">
-                        <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        </div>
-                        <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="slider4__item ">
-                            <iframe width="330" height="228" src="https://www.youtube.com/embed/oGbtbO3RoVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-
                     </div>
                 </div>
             </section>
-
+            <section class="paragraph">
+                <div class="container-small">
+                    <p class="paragraph__text">Хорошая акустическая гитара –
+                        верный путь к правильному восприятию нот, а значит, она
+                        способна ускорить процесс обучения игры на музыкальном
+                        инструменте. Компания Guitar Lavka предлагает купить
+                        акустическую гитару с доставкой от ведущих
+                        производителей – Cort,
+                        Enya и Sigma Guitars.
+                        Каждая гитара акустическая, цена на которую меньше 5000
+                        рублей (дешевые модели), часто искажают качество звука
+                        при игре, что затрудняет обучение, однако это не
+                        означает, что невозможно найти недорогую гитару в
+                        интернет- магазине Guitar Lavka. В акаталоге имеется
+                        базовая «акустика» (бюджетные модели) стоимостью до
+                        10000 рублей. Такие модели лишены дополнительного лоска,
+                        но самое главное – они не искажают звук и способны
+                        правильно научить слушать ритм, ноты и такты при
+                        обучении. </p>
+                </div>
+            </section>
             <footer class="footer">
                 <div class="container">
                     <div class="footer__row1">
