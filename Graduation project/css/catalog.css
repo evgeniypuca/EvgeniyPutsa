@@ -420,6 +420,10 @@ i:hover {
 }
 .catalog__filter-list > li {
   margin-bottom: 5px;
+  transition: 0.3s ease;
+}
+.catalog__filter-list > li > a:hover {
+  color: #CC7408;
 }
 .catalog__filter-list-drop {
   margin-left: 10px;
@@ -431,6 +435,10 @@ i:hover {
   font-weight: 400;
   line-height: normal;
   line-height: 30px;
+  transition: 0.3s ease;
+}
+.catalog__filter-list-drop li > a:hover {
+  color: #CC7408;
 }
 .catalog__head {
   color: rgba(255, 255, 255, 0.6);

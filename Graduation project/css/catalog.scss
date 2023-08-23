@@ -512,6 +512,11 @@ i {
 
 		&>li {
 			margin-bottom: 5px;
+					transition: 0.3s ease;
+
+			&>a:hover {
+				color: $orange;
+			}
 		}
 	}
 
@@ -521,6 +526,11 @@ i {
 		color: $grey;
 		@include textGrey14;
 		line-height: 30px;
+		transition: 0.3s ease;
+
+		li>a:hover {
+			color: $orange;
+		}
 	}
 
 	&__right {}
