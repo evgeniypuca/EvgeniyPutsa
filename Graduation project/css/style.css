@@ -163,6 +163,7 @@ a {
   cursor: pointer;
   width: 64px;
   height: 64px;
+  border: 1px solid #131218;
 }
 @media (max-width: 650px) {
   .btn-up {
@@ -171,7 +172,7 @@ a {
   }
 }
 .btn-up:hover {
-  background-color: rgb(148, 96, 0);
+  background-color: #9b5704;
 }
 
 .btn-up::before {

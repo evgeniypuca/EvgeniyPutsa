@@ -138,11 +138,31 @@ $(document).ready(function () {
         ]
     });
 
+//------Скролл вверх----------------------------------------------------------------------------
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 700);
+        });
+    });
+
 });
+//------Раскрывающий список---------------------------------------------------------------------------
 
 function dropList(number) {
     document.getElementById("Drop" + number).classList.toggle("show");
 };
+
+
+
+//------Бургер меню----------------------------------------------------------------------------
 
 var menuBtn = document.querySelector('.menu-btn');
 var menu = document.querySelector('.header-bottom__menu');
@@ -152,26 +172,3 @@ menuBtn.addEventListener('click', function () {
 });
 
 
-$(function () {
-
-    $(window).scroll(function () {
-
-        if ($(this).scrollTop() != 0) {
-
-            $('#toTop').fadeIn();
-
-        } else {
-
-            $('#toTop').fadeOut();
-
-        }
-
-    });
-
-    $('#toTop').click(function () {
-
-        $('body,html').animate({ scrollTop: 0 }, 800);
-
-    });
-
-});
