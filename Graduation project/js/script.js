@@ -171,4 +171,9 @@ menuBtn.addEventListener('click', function () {
     menu.classList.toggle('active');
 });
 
+//------Отправка формы алерт----------------------------------------------------------------------------
+
+document.addEventListener('submit', function(){
+    alert('Сапасибо за заполнение!');
+});
 
